@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Omeka Bootstrap Theme
 =====================
 
@@ -108,3 +109,7 @@ Carousel:
 [Bootstrap3-Zend-Framework]: https://github.com/paladisco/Bootstrap3-Zend-Framework
 [ZF-Twitter-Bootstrap]: https://github.com/lciolecki/zf-twitter-bootstrap
 [Daniel-KM]: https://github.com/Daniel-KM "Daniel Berthereau"
+=======
+# OmekaCustomTheme-Bootstrap_UoM
+Bootstrap Theme for UoM &amp;&amp; Digital Humanities
+>>>>>>> 469c937e47963ee3137c5e723216587ec9005f67
