@@ -8,13 +8,23 @@
                 </div>
             </div>
             <div class="row">
+                <!--
                 <div class="col-sm-9">
                     <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
                         <p><?php echo $copyright; ?></p>
                     <?php endif; ?>
                 </div>
-                <div class="col-sm-3">
-                    <p class="omeka-props-footer text-right"><?php echo __('Proudly powered by <a href="https://omeka.org">Omeka</a>.'); ?></p>
+                -->
+                <div class="col-sm-4">
+                  <a href="/impressum">Impressum</a>
+                </div>
+                <div class="col-sm-4">
+                  <p class="text-center">
+                    <a href="/datenschutzerklaerung">Datenschutzerklärung</a>
+                  </p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="text-right omeka-props-footer text-right"><?php echo __('Erstellt mit <a href="https://omeka.org">Omeka</a>.'); ?></p>
                 </div>
             </div>
             <div>
@@ -48,12 +58,18 @@
      <script type="text/javascript">
     jQuery(document).ready(function () {
         <?php if (get_theme_option('Use Advanced Search')): ?>
-        Omeka.showAdvancedForm();
+        /*Omeka.showAdvancedForm();*/
         <?php endif; ?>
-        Omeka.dropDown();
+        /*Omeka.dropDown();*/
         <?php if ($displayGridRotator): ?>
-        Omeka.displayGridRotator();
+        /*Omeka.displayGridRotator();*/
         <?php endif; ?>
+        jQuery('.grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          percentPosition: true,
+          gutter: 0
+        })
     });
     </script>
 

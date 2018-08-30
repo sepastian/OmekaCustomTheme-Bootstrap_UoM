@@ -36,7 +36,7 @@
         queue_css_file('corner-banner');
     }
     if (get_theme_option('Display Grid Rotator') && is_current_url('/')):
-        queue_css_file('grid-rotator-style');
+        queue_css_file('grid-rotator-style');       
     ?>
         <noscript>
         <link rel="stylesheet" type="text/css" href="<?php echo css_src('grid-rotator-fallback'); ?>" />
@@ -49,7 +49,7 @@
 
     echo head_css();
     ?>
-
+    
     <!-- JavaScripts -->
     <?php If (get_theme_option('Use Accessible Mega Menu')):
         queue_js_file(array('globals', 'vendor/jquery-accessibleMegaMenu'));
@@ -69,7 +69,9 @@
         <div class="row">
             <div id="site-title" class="col-sm-6">
                 <div class="logoimg">
-                    <h1><?php echo link_to_home_page(str_replace('>', ' class="img-responsive">', theme_logo())); ?></h1>
+                    <h1>
+                        <?php echo link_to_home_page(str_replace('>', ' class="img-responsive">', theme_logo())); ?>
+                     </h1>
                 </div>
             </div>
             <div id="search-container" class="col-sm-6" role="search">
@@ -83,6 +85,7 @@
     </header>
     <?php // Eventually remove the container to set the menu through screen. ?>
     <div class="container">
+    <!--
     <nav id="nav-wrap" class="navbar navbar-default">
         <div class="container-fluid">
             <?php // Brand and toggle get grouped for better mobile display ?>
@@ -120,9 +123,13 @@
             </div>
          </div>
     </nav>
+    -->
     <?php if ($breadcrumb = get_theme_option('Display Breadcrumb Trail')):
-        echo common('breadcrumb', array('title' => @$title, 'mode' => $breadcrumb));
+      echo common('breadcrumb', array('title' => @$title, 'mode' => $breadcrumb));
     endif; ?>
-    </div>
+            <div class="col-sm-12 text-left" id="main-title">
+              <span>Digitales Uni Museum Passau</span>
+            </div>
+</div>
     <div class="container" id="wrapper">
         <div id="content">
