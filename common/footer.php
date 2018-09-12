@@ -64,12 +64,23 @@
         <?php if ($displayGridRotator): ?>
         /*Omeka.displayGridRotator();*/
         <?php endif; ?>
+        /*
         jQuery('.grid').masonry({
           itemSelector: '.grid-item',
           columnWidth: '.grid-sizer',
           percentPosition: true,
           gutter: 0
         })
+        */
+        /* Set background on tiles. */
+        // Use ID of each .tile-with-text
+        // as a key to background image in tiles.
+        jQuery('.tile-with-text').each(function(i,e) {
+          var key = jQuery(e).attr('id').replace(/^tile-with-text--/,'');
+          var url = tiles[key];
+          var css = "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6))," + 'url("' + tiles[key] + '")';
+          jQuery(e).css('background-image', css);
+        });
     });
     </script>
 
