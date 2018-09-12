@@ -794,31 +794,15 @@ footer a {
   display: none;
 }
 
-/************ Masonry **********/
-
-/*
-.grid-sizer,
-.grid-item {
-  box-sizing: border-box;
-  width: 25%;
-  margin-bottom: 10px;
-}
-
-.grid-item--width2 {
-  width: 50%;
-}
-
-.grid-item img {
-  object-fit: cover;
-  height: 275px;
-}
-
-.grid-item--width2 img {
-  width: 560px;
-}
-*/
-
 /**** Text over images ****/
+
+table.tiles {
+  width: 100%;
+}
+
+table.tiles td {
+  padding: 2px;
+}
 
 .tile-with-text {
   height: 300px;
