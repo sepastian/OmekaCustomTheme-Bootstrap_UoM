@@ -72,16 +72,15 @@
           gutter: 0
         })
         */
-        /* Set background on tiles. */
-        // Use ID of each .tile-with-text
-        // as a key to background image in tiles.
-        jQuery('.tile-with-text').each(function(i,e) {
-          var key = jQuery(e).attr('id').replace(/^tile-with-text--/,'');
-          var url = tiles[key];
-          var css = "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6))," + 'url("' + tiles[key] + '")';
-          jQuery(e).css('background-image', css);
-        });
-    });
+
+        /* XXXX */
+        jQuery('body.exhibits.summary .primary .col-sm-9').removeClass('col-sm-9').addClass('col-sm-12')
+        //jQuery('body.exhibits.summary .primary .col-sm-3').remove()
+
+        // Inject tiles into current page,
+        // replacing placeholders with class '.up40-tile-set'.
+        inject_tile_sets(jQuery('.up40-tile-set'));
+});
     </script>
 
     <?php if (get_theme_option('Use Google Analytics') && $googleAccount = get_theme_option('Google Analytics Account')): ?>

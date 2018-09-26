@@ -796,30 +796,38 @@ footer a {
 
 /**** Text over images ****/
 
-table.tiles {
+table.up40-tile-set {
   width: 100%;
 }
 
-table.tiles td {
+table.up40-tile-set td {
   padding: 2px;
+  width:25%;
 }
 
-.tile-with-text {
-  height: 300px;
+.up40-tile {
+  height: 250px;
   background-size: 100%;
   background-position: center;
   position: relative;
 }
 
-.tile-with-text a {
+table.up40-tile-set-depot .up40-tile {
+  height: 150px;
+}
+table.up40-tile-set-depot .up40-tile a {
+  font-size: 1.0em;
+}
+
+.up40-tile a {
   color: #fff;
   font-weight: 600;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-  font-size: 2.0em;
+  font-size: 1.2em;
   text-transform: uppercase;
 }
 
-.tile-with-text .header {
+.up40-tile .header {
   position: absolute;
   bottom: 0;
   left: 0;

@@ -54,7 +54,7 @@
     <?php If (get_theme_option('Use Accessible Mega Menu')):
         queue_js_file(array('globals', 'vendor/jquery-accessibleMegaMenu'));
     endif; ?>
-    <?php queue_js_file(array('up')); ?>
+    <?php queue_js_file(array('up40')); ?>
     <?php // see footer for bootstrap-related js...
     echo head_js(); ?>
 </head>
