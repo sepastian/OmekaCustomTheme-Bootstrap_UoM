@@ -63,6 +63,62 @@ function inject_tile_sets(elements) {
     })
 }
 
+function inject_nav() {
+    var e = nav[location.pathname]
+    if (! e) {
+        return
+    }
+    // TODO construct breadcrumbs resolving parent.
+    var breadcrumbs = [{title: e.title, href: location.pathname}]
+    var parent = e.parent
+    while (parent) {
+        breadcrumbs.push({title: parent.title, href: parent.href})
+        parent = parent.parent
+    }
+    var html = ["<div class='up40-nav row'>","<div class='col-xs-10 col-xs-offset-1'>"]
+    var keys = ['prev','parent','next']
+    keys.forEach(function(k){
+        html.push("<div class='col-xs-4 up40-nav-" + k + "'>")
+        html.push("<a href='" + (e[k] || {href:'#'}).href + "'>")
+        html.push((e[k] || {title:''}).title)
+        html.push("</a>")
+        html.push("</div>")
+    })
+    breadcrumbs.reverse().forEach(function(b,i){
+        html.push("<a href='" + b.href + "'>" + b.title + "</a>")
+        if (i < breadcrumbs.length - 1) {
+            html.push("<span>&rarr;</span>")
+        }
+    })
+    html.push("</div></div>")
+    jQuery('.up40-nav').replaceWith(html.join(''));
+}
+
+// Use location.pathname to select navigation elements.
+var nav = {
+    '/' : {
+        title: 'Start',
+        prev: null,
+        next: {
+            title: 'Uni Geschichte',
+            href: "/uni-geschichte"
+        },
+        parent: null,
+    },
+    '/uni-geschichte': {
+        title: 'Uni Geschichte',
+        prev: null,
+        next: {
+            title: 'Wie die Uni wurde, was sie ist',
+            href: '/exhibits/show/wie-die-uni-wurde-was-sie'
+        },
+        parent: {
+            title: 'Start',
+            href: '/'
+        }
+    }
+}
+
 var tile_sets = {
     // / (homepage)
     'home-museum': [

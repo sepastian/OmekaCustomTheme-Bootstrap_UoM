@@ -713,8 +713,8 @@ body {
 #header + .container {
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-  padding-top: 15px;
-  margin-top: 15px;
+  /*padding-top: 15px;*/
+  /*margin-top: 15px;*/
 }
 
 #wrapper {
@@ -845,4 +845,65 @@ table.up40-tile-set-depot .up40-tile a {
   font-weight: 600;
   color: #000;
   text-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+
+.up40-teaser {
+  font-weight: 600;
+}
+
+p {
+  text-align: justify;
+}
+
+#site-title-text {
+  font-weight: 800;
+  color: black;
+  background-color: white;
+  font-size: 2.0em;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 15px 0 0 0;
+  padding: 10px 0 0 0;
+}
+
+/* UP40 nav */
+.up40-nav {
+  margin: 0 0 10px 0;
+}
+.up40-nav-next, .up40-nav-prev, .up40-nav-parent {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+.up40-nav-prev {
+  padding: 0;
+  text-align: left;
+}
+.up40-nav-prev:before {
+  content: '\f04a  Zurück: ';
+  font-family: FontAwesome;
+}
+.up40-nav-prev:after {
+  content: ''
+}
+.up40-nav-parent {
+  padding: 0;
+  text-align: center;
+}
+.up40-nav-parent:before {
+  content: ''
+}
+.up40-nav-parent:after {
+  content: '';
+  font-family: FontAwesome;
+}
+.up40-nav-next {
+  padding: 0;
+  text-align: left;
+}
+.up40-nav-next:before {
+  content: 'Weiter: '
+}
+.up40-nav-next:after {
+  content: ' \f04e';
+  font-family: FontAwesome;
 }

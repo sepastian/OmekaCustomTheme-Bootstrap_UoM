@@ -64,14 +64,6 @@
         <?php if ($displayGridRotator): ?>
         /*Omeka.displayGridRotator();*/
         <?php endif; ?>
-        /*
-        jQuery('.grid').masonry({
-          itemSelector: '.grid-item',
-          columnWidth: '.grid-sizer',
-          percentPosition: true,
-          gutter: 0
-        })
-        */
 
         /* XXXX */
         jQuery('body.exhibits.summary .primary .col-sm-9').removeClass('col-sm-9').addClass('col-sm-12')
@@ -81,6 +73,12 @@
         // replacing placeholders with class '.up40-tile-set'.
         inject_tile_sets(jQuery('.up40-tile-set'));
 });
+        inject_nav();
+        // Load 3D models, if present.
+        var containers = jQuery('.threejs');
+        if (containers.length > 0) {
+            load_3d_model(containers[0]);
+        }
     </script>
 
     <?php if (get_theme_option('Use Google Analytics') && $googleAccount = get_theme_option('Google Analytics Account')): ?>

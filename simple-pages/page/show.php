@@ -24,9 +24,10 @@ echo head(array(
         </div>
     </div>
     <?php endif;
-
-    $text = metadata('simple_pages_page', 'text', array('no_escape' => true));
-    echo $this->shortcodes($text);
     ?>
+    <div class="col-sm-10 col-sm-offset-1">
+      <?php $text = metadata('simple_pages_page', 'text', array('no_escape' => true)); ?>
+      <?php echo $this->shortcodes($text); ?>
+    </div>
 </div>
 <?php echo foot();

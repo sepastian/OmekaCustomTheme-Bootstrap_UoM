@@ -55,6 +55,7 @@
         queue_js_file(array('globals', 'vendor/jquery-accessibleMegaMenu'));
     endif; ?>
     <?php queue_js_file(array('up40')); ?>
+    <?php queue_js_file(array('threejs/three.min','threejs/DDSLoader','threejs/MTLLoader','threejs/OBJLoader','threejs/OrbitControls','up40_3d')); ?>
     <?php // see footer for bootstrap-related js...
     echo head_js(); ?>
 </head>
@@ -80,6 +81,9 @@
                     'show_advanced' => get_theme_option('Use Advanced Search'),
                     'submit_value' => __('Search'),
                     'form_attributes' => array('class' => 'form-search navbar-form navbar-right', 'role' => 'form'))); ?>
+            </div>
+            <div class="col-sm-12" id="site-title-text">
+              <span>Digitales Uni Museum Passau</span>
             </div>
         </div>
         <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
@@ -128,9 +132,8 @@
     <?php if ($breadcrumb = get_theme_option('Display Breadcrumb Trail')):
       echo common('breadcrumb', array('title' => @$title, 'mode' => $breadcrumb));
     endif; ?>
-            <div class="col-sm-12 text-left" id="main-title">
-              <span>Digitales Uni Museum Passau</span>
-            </div>
+    
 </div>
     <div class="container" id="wrapper">
         <div id="content">
+        <div class="up40-nav"></div>

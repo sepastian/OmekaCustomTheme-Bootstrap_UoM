@@ -12,7 +12,7 @@ echo head(array(
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-offset-1 col-sm-9">
       <div id="exhibit-blocks" role="main">
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>
