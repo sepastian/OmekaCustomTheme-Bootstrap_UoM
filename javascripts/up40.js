@@ -217,6 +217,7 @@ var tile_sets = {
                 image: "/files/square_thumbnails/648d8639a875fcd775ef45e6971b32b2.jpg", //FotoNeu
                 text: "",
                 href: "/exhibits/show/wie-die-uni-wurde-was-sie/geschichtlicher-ueberblick"
+            }, {
             }
         ]
     ],
