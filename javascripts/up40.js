@@ -293,16 +293,134 @@ var tile_sets = {
     // Studentenleben im 19. Jahrhundert
     // TODO
     '/exhibits/show/studentenleben': [
+       [
+        {
+             title: "Am Lyzeum",
+             image: "/files/square_thumbnails/aec6b1528eb6353034407f1eb9cdb4b5.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/lyzeum"
+        },
+        {
+             title: "Wir haben Regeln",
+             image: "/files/square_thumbnails/df9110be9395bfc8c8e4f6e8e327c397.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/regeln"
+        },
+        {
+             title: "Stundenpläne",
+             image: "/files/square_thumbnails/17eddeda3b346f45c52a95f4454d5444.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/stundenplaene"
+        },
+        {
+             title: "Noten",
+             image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/noten"
+        },[
+            {
+             title: "Zwei Studenten",
+             image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/noten/zwei-studenten"
+            },
+            {
+             title: "Karrierestart",
+             image: "/files/square_thumbnails/5bdfbf5f28dcb7fef661137d60e7fa12.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/noten/karrierestart"
+            }
+         ],
+        {
+             title: "Timeline",
+             image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/timeline"
+        },
+        {
+             title: "Eine Wohngemeinschaft?",
+             image: "/files/square_thumbnails/3b08653cc94aa71cf7e2e8fec670d1c8.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/wohngemeinschaft"
+        }
+       ]
     ],
     // Studentenschaft
     // Paul Esterl - Ein Student vor 180 Jahren
     // TODO
     '/exhibits/show/paul-esterl': [
+        [
+            {
+             title: "Das Absolutorium",
+             image: "/files/square_thumbnails/07da4ce1cf47b0cc439672f899471b6f.jpg",
+             text: "",
+             href: "/exhibits/show/paul-esterl/paul_esterl_absolutorium"
+        },
+        {
+             title: "Immatrikulation",
+             image: "/files/square_thumbnails/ee051cd9dd03715889ae2d27916c6e56.jpg",
+             text: "",
+             href: "/exhibits/show/paul-esterl/paul_esterl_immatrikulation"
+        },
+        {
+             title: "Seine Noten",
+             image: "/files/square_thumbnails/978739725213a5342c17cef7eb4e624a.jpg",
+             text: "",
+             href: "/exhibits/show/paul-esterl/paul_esterl_noten"
+        },
+        {
+             title: "Semestralzeugnis",
+             image: "/files/square_thumbnails/d3e74ff688274c140c932bfc5e3d60db.jpg",
+             text: "",
+             href: "/exhibits/show/paul-esterl/paul_esterl_semestralzeugnis"
+        },
+        {
+             title: "Der Lebensweg des Paul Esterl",
+             image: "/files/square_thumbnails/057b342a5bec039889c3fbc6c022c244.jpg",
+             text: "",
+             href: "/exhibits/show/paul-esterl/paul_esterl_lebensweg"
+        },
+        ]
     ],
     // Studentenschaft
     // Die Weltkriege, die Studenten
     // TODO
     '/exhibits/show/weltkriege-studenten': [
+        [
+        {
+             title: "1.Weltkrieg",
+             image: "/files/square_thumbnails/2f39545c9b72357853a60a343bf69ba8.jpg",
+             text: "",
+             href: "/exhibits/show/weltkriege-studenten/1--weltkrieg"
+        },
+        {
+             title: "2.Weltkrieg",
+             image: "/files/square_thumbnails/85d7c1fa6710ae05e1de0c2d93b454af.jpg",
+             text: "",
+             href: "/exhibits/show/weltkriege-studenten/2--weltkrieg"
+        },[
+            {
+                title: "Alois Winklhofer",
+                image: "/files/square_thumbnails/ca8c6f623c01c8ed8a08cc65330e6333.jpg",
+                text: "",
+                href: "/exhibits/show/weltkriege-studenten/2--weltkrieg/alois-winklhofer"
+            },
+            {
+                title: "Antonius Hofmann",
+                image: "/files/square_thumbnails/76288477f12010855a31e86424afc481.jpg",
+                text: "",
+                href: "/exhibits/show/weltkriege-studenten/2--weltkrieg/antonius-hofmann"
+            },
+            {
+                title: "Johann Unterberg",
+                image: "/files/square_thumbnails/50228cf422d497773b8bffdc6350dc96.jpg",
+                text: "",
+                href: "/exhibits/show/weltkriege-studenten/2--weltkrieg/johann-unterberg"
+            },
+            
+          ],
+            
+        ]
     ],
     // /Lehre im Wandel
     // /Lehren und Lernen im 20. Jahrhundert
@@ -436,11 +554,91 @@ var tile_sets = {
     // Ein Archiv packt aus.
     // TODO
     '/exhibits/show/ein-archiv-packt-aus': [
+        [
+            {
+                title: "Bewahren!",
+                image: "/files/square_thumbnails/a3b60c4dd04349cb81f00e60d7769959.jpg",
+                text: "",
+                href: "/exhibits/show/ein-archiv-packt-aus/bewahren-"
+            },
+            {
+                title: "Aufarbeiten!",
+                image: "/files/square_thumbnails/aec6b1528eb6353034407f1eb9cdb4b5.jpg",
+                text: "",
+                href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-"
+            },
+            [
+                {
+                    title: "Zahlen zur Studentenschaft",
+                    image: "/files/square_thumbnails/64341a371ff28c3c1dceef4cec595495.jpg",
+                    text: "",
+                    href: "/exhibits/show/ein-archiv-packt-aus/zahlen"
+                },
+                {
+                    title: "Sozialstruktur",
+                    image: "/files/square_thumbnails/e1fd14589874a5dcf34126a33772115a.jpg",
+                    text: "",
+                    href: "/exhibits/show/ein-archiv-packt-aus/sozialstruktur"
+                }
+                
+            ],
+            {
+                title: "Zeigen!",
+                image: "/files/square_thumbnails/71087e69bf7058c3f8520a34c6d65c6c.jpg",
+                text: "",
+                href: "/exhibits/show/ein-archiv-packt-aus/zeigen-"
+            }
+            
+        ]
     ],
     // Projekt
     // Das Projekt.
     // TODO
     '/exhibits/show/projekt': [
+        [
+            {
+                title: "Ablauf",
+                image: "/files/square_thumbnails/17c81fcc5e59206c83aceca549db9ec7.jpg",
+                text: "",
+                href: "/exhibits/show/projekt/ablauf"
+            },
+            {
+                title: "Digitalisierung",
+                image: "/files/square_thumbnails/ee0792235a4424ac04f74511149f3d0f.jpg",
+                text: "",
+                href: "/exhibits/show/projekt/digitalisierung"
+            },
+            {
+                title: "Oral History",
+                image: "/application/views/scripts/images/fallback-audio.png", //ist kein Foto vom Lehrststuhl, rechta aufpassen
+                text: "",
+                href: "/exhibits/show/projekt/oral-history"
+            },
+            {
+                title: "Virtuelles Museum/ Datenbanken",
+                image: "/files/square_thumbnails/be4c6e0770b719d88e6f7143694bc972.jpg",
+                text: "",
+                href: "/exhibits/show/projekt/datenbanken"
+            },
+            {
+                title: "Projektarbeit im Digitalen",
+                image: "/files/square_thumbnails/d7bbb7c7714f3fb0387fc0f110f3032f.jpg",
+                text: "",
+                href: "/exhibits/show/projekt/projektarbeit"
+            },
+            {
+                title: "Projektarbeit für Kultur",
+                image: "/files/square_thumbnails/bb014fbc75b28a3402f310b6191567ba.jpg",
+                text: "",
+                href: "/exhibits/show/projekt/projektarbeit-f--r-kultur"
+            },
+            {
+                title: "BeiträgerInnen",
+                image: "/files/square_thumbnails/a735cf4307ea9e82589d5a42454f7b3b.jpg",
+                text: "",
+                href: "/exhibits/show/projekt/beitr--gerinnen"
+            }
+        ]
     ],
     // / (homepage)
     'home-depot': [
@@ -457,36 +655,275 @@ var tile_sets = {
     // Besondere Orte
     // TODO
     '/exhibits/show/besondere-orte': [
+        [
+            {
+                title: "Die Kapelle der Bürgerkongregation",
+                image: "/files/square_thumbnails/9495233de2d490077862837e40050ae5.jpg",
+                text: "",
+                href: "/exhibits/show/besondere-orte/kapelle-buergerkongregatio"
+            },
+            {
+                title: "Das Philosophicum",
+                image: "/files/square_thumbnails/648d8639a875fcd775ef45e6971b32b2.jpg",
+                text: "",
+                href: "/exhibits/show/besondere-orte/philosophicum-bilder"
+            },
+            {
+                title: "Der Polyeder",
+                image: "/files/square_thumbnails/179d019a07847944ca5a4f8621ffc57f.jpg",
+                text: "",
+                href: "/exhibits/show/besondere-orte/polyeder"
+            },
+            {
+                title: "Römischer Grabstein",
+                image: "", //hier fehlt das Bild!!
+                text: "",
+                href: "/exhibits/show/besondere-orte/roemischer-grabstein"
+            }
+        ]
     ],
     // Campus
     // MEINE Kunst am Campus
     // TODO
     '/exhibits/show/kunst-am-campus': [
+        [
+            {
+                title: "Wolf",
+                image: "/files/square_thumbnails/4d2d53fde6257565b2c2c891aa688219.jpg",
+                text: "",
+                href: "/exhibits/show/kunst-am-campus/wolf"
+            },
+            {
+                title: "Boot",
+                image: "/files/square_thumbnails/0bf46802e7805a68b1aee84779286a1e.jpg",
+                text: "",
+                href: "/exhibits/show/kunst-am-campus/boot"
+            },
+            {
+                title: "Segel",
+                image: "/files/square_thumbnails/e9200bdfcb07adef8a8c708ff53c7a33.jpg",
+                text: "",
+                href: "/exhibits/show/kunst-am-campus/segel"
+            },
+            {
+                title: "OT",
+                image: "/files/square_thumbnails/4450a6172c2db0f384bff3a0714a05e1.jpg",
+                text: "",
+                href: "/exhibits/show/kunst-am-campus/ohne-titel"
+            },
+            {
+                title: "Objekte",
+                image: "/files/square_thumbnails/934746bf19cd0381ba5db725e3760fb3.jpg",
+                text: "",
+                href: "/exhibits/show/kunst-am-campus/objekte"
+            },
+            {
+                title: "Kugeln",
+                image: "/files/square_thumbnails/8ff0dfd0a0de22a11b92512d3a9f787e.jpg",
+                text: "",
+                href: "/exhibits/show/kunst-am-campus/kugeln"
+            },
+            {
+                title: "Grafitti",
+                image: "/files/square_thumbnails/cebc3bdf9d700b378c900d940fc71ef8.jpg",
+                text: "",
+                href: "/exhibits/show/kunst-am-campus/grafitti"
+            }
+        ]
     ],
     // Campus
     // Die Stadt und die Uni
     // TODO
     '/exhibits/show/stadt-und-uni': [
+        [
+            {
+                title: "Die Studenten kommen",
+                image: "/files/square_thumbnails/c4456f479e4126354e2ff188572dd077.jpg",
+                text: "",
+                href: "/exhibits/show/stadt-und-uni/die-studenten-kommen-"
+            },
+            {
+                title: "Das Studenten-Ghetto",
+                image: "/files/square_thumbnails/c78d1e776ccce0198f68cabc1fdd65a5.jpg",
+                text: "",
+                href: "/exhibits/show/stadt-und-uni/das-studenten-ghetto"
+            },
+            {
+                title: "Passau räumt auf",
+                image: "/files/square_thumbnails/7c57192900f40fc547d04894d3367706.jpg",
+                text: "",
+                href: "/exhibits/show/stadt-und-uni/passau-r--umt-auf"
+            }
+        ]
     ],
     // Aussenwirkung
     // Fernliegend?
     // TODO
     '/exhibits/show/fernliegend': [
+        [
+            {
+                title: "Wo?",
+                image: "/files/square_thumbnails/37731211bdde20e58feb08413bac0089.jpg",
+                text: "",
+                href: "/exhibits/show/fernliegend/wo-"
+            },
+            {
+                title: "Wann?",
+                image: "/files/square_thumbnails/f8aed922846b5a0d224d4733384497ab.jpg",
+                text: "",
+                href: "/exhibits/show/fernliegend/zeitleiste"
+            },
+            {
+                title: "Prag",
+                image: "/files/square_thumbnails/6eef20a20c061219715631e58b2008ac.jpg",
+                text: "",
+                href: "/exhibits/show/fernliegend/prag"
+            },
+            {
+                title: "Tours",
+                image: "/files/square_thumbnails/ef50a260621544fce13db32aa1e10970.jpg",
+                text: "",
+                href: "/exhibits/show/fernliegend/tours"
+            },
+            {
+                title: "Verona",
+                image: "/files/square_thumbnails/586c7b1c891f675b18957f57e35f8809.jpg",
+                text: "",
+                href: "/exhibits/show/fernliegend/verona"
+            },
+            {
+                title: "Lviv",
+                image: "/files/square_thumbnails/3fcf7d432c29735811746d491be484a2.jpg",
+                text: "",
+                href: "/exhibits/show/fernliegend/lviv"
+            }
+        ]
     ],
     // Aussenwirkung
     // Was war wichtig?
     // TODO
     '/exhibits/show/sonderbeilagen': [
+        [
+            {
+                title: "PNP Sonderbeilage 1978",
+                image: "/files/square_thumbnails/3f7a8b7b62c8225c60ebc6776c62939e.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1978"
+            },
+            {
+                title: "PNP Sonderbeilage 1983",
+                image: "/files/square_thumbnails/c331a01601ad99eca5aa0cd1c33a7681.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1983"
+            },
+            {
+                title: "PNP Sonderbeilage 1993",
+                image: "/files/square_thumbnails/5e7a50167eb680dc92a7a2eec2df6af3.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1993"
+            },
+            {
+                title: "PNP Sonderbeilage 1998",
+                image: "/files/square_thumbnails/e6b8ceb25350164be5d7ed97bfe15669.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998"
+            },[
+                {
+                    title: "Universität & Fakultäten",
+                    image: "/files/square_thumbnails/87185bbdc6e7ca97284fbbcd04ebe87c.jpg",
+                    text: "",
+                    href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998/universitaetfakultaeten"
+                }  
+              ],
+            {
+                title: "PNP Sonderbeilage 2003",
+                image: "/files/square_thumbnails/93aa9aeef3a5b85d1c4720e8f1a077cb.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2003"
+            },
+            {
+                title: "PNP Sonderbeilage 2008",
+                image: "/files/square_thumbnails/254846bc44f9869c48290d95e3adb476.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2008"
+            },
+            {
+                title: "Im Lauf der Zeit",
+                image: "/files/square_thumbnails/93aa9aeef3a5b85d1c4720e8f1a077cb.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit"
+            },[
+                {
+                    title: "Im Lauf der Zeit",
+                    image: "/files/square_thumbnails/3f7a8b7b62c8225c60ebc6776c62939e.jpg",
+                    text: "",
+                    href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit/titelseiten"
+                },
+                {
+                    title: "Das Grußwort über die Jahre",
+                    image: "/files/square_thumbnails/19eb087adcb7a7747e546db23d8490b7.jpg",
+                    text: "",
+                    href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit/das-grusswort"
+                },
+                {
+                    title: "Der Präsident kommt zu Wort!",
+                    image: "/files/square_thumbnails/b7ebbcf4451256e33ba125c7c790935d.jpg",
+                    text: "",
+                    href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit/paesident" //Rechtschreibfehler
+                }    
+            ],
+        ]
     ],
     // Aussenwirkung
     // Das Logo
     // TODO
     '/exhibits/show/logo': [
+        [
+            {
+                title: "Logo",
+                image: "/files/square_thumbnails/451c323a379318cbb032bb7a67bd429e.jpg",
+                text: "",
+                href: "/exhibits/show/logo/logo"
+            },
+            {
+                title: "Der &quot;Madonnenstreit&quot; ",
+                image: "/files/square_thumbnails/70fb2d8f83a708c5058db6e16b0b9028.jpg",
+                text: "",
+                href: "/exhibits/show/logo/der--madonnenstreit-"
+            },
+        ]
     ],
     // Aussenwirkung
     // Born Digital
     // TODO
     '/exhibits/show/born-digital': [
+        [
+            {
+                title: "Quellen, digital",
+                image: "/files/square_thumbnails/b6494ec5b3a11d5a33fcaaa2b5cceb46.jpg",
+                text: "",
+                href: "/exhibits/show/born-digital/born-digital"
+            },
+            {
+                title: "Funktion",
+                image: "/files/square_thumbnails/325f84b22abc994d30e8a070b6c73489.jpg",
+                text: "",
+                href: "/exhibits/show/born-digital/funktion"
+            },
+            {
+                title: "Design",
+                image: "/files/square_thumbnails/d7bbb7c7714f3fb0387fc0f110f3032f.jpg",
+                text: "",
+                href: "/exhibits/show/born-digital/design"
+            },
+            {
+                title: "Fakultäten",
+                image: "/files/square_thumbnails/28788a7adbfbfc9b92e4d63e8dc1920f.jpg",
+                text: "",
+                href: "/exhibits/show/born-digital/fakultaeten"
+            },
+            
+        ]
     ],
     // /depot
     'home-depot-typen': [
