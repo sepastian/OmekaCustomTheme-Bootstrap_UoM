@@ -60,17 +60,17 @@ var tile_sets = {
         [
             {
                 title: "Wie die Uni wurde, was sie ist",
-                image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
+                image: "/files/square_thumbnails/cb8f4d921327febad38945e8d1ce4754.jpg",
                 text: "",
                 href: "/exhibits/show/wie-die-uni-wurde-was-sie"
             }, {
                 title: "Spiegel der Hochschulgeschichte",
-                image: "/files/square_thumbnails/688550b26d959134207dfecec6ada8d2.jpg",
+                image: "/files/square_thumbnails/9b0704970a7a6a783fcab30e338b583f.jpg",
                 text: "",
                 href: "/exhibits/show/spiegel_hochschulgeschichte"
             }, {
                 title: "Warum Passau?",
-                image: "/files/square_thumbnails/110f5bd92997fd7bdb17324ee905e30b.jpg",
+                image: "/files/square_thumbnails/e81c29a3046a3232de39e63cf8c15f24.jpg",
                 text: "",
                 href: "/exhibits/show/warum-passau"
             }
