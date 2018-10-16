@@ -317,7 +317,27 @@ var tile_sets = {
              image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
              text: "",
              href: "/exhibits/show/studentenleben/noten"
-        },[
+        }
+           ],[
+        {
+             title: "Timeline",
+             image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/timeline"
+        },
+        {
+             title: "Eine Wohngemeinschaft?",
+             image: "/files/square_thumbnails/3b08653cc94aa71cf7e2e8fec670d1c8.jpg",
+             text: "",
+             href: "/exhibits/show/studentenleben/wohngemeinschaft"
+        },
+               {
+               }
+       ]
+    ],
+    
+    '/exhibits/show/studentenleben/noten/':[
+    [
             {
              title: "Zwei Studenten",
              image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
@@ -330,21 +350,9 @@ var tile_sets = {
              text: "",
              href: "/exhibits/show/studentenleben/noten/karrierestart"
             }
-         ],
-        {
-             title: "Timeline",
-             image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
-             text: "",
-             href: "/exhibits/show/studentenleben/timeline"
-        },
-        {
-             title: "Eine Wohngemeinschaft?",
-             image: "/files/square_thumbnails/3b08653cc94aa71cf7e2e8fec670d1c8.jpg",
-             text: "",
-             href: "/exhibits/show/studentenleben/wohngemeinschaft"
-        }
-       ]
+         ]
     ],
+    
     // Studentenschaft
     // Paul Esterl - Ein Student vor 180 Jahren
     // TODO
@@ -367,7 +375,8 @@ var tile_sets = {
              image: "/files/square_thumbnails/978739725213a5342c17cef7eb4e624a.jpg",
              text: "",
              href: "/exhibits/show/paul-esterl/paul_esterl_noten"
-        },
+        }
+            ],[
         {
              title: "Semestralzeugnis",
              image: "/files/square_thumbnails/d3e74ff688274c140c932bfc5e3d60db.jpg",
@@ -380,6 +389,8 @@ var tile_sets = {
              text: "",
              href: "/exhibits/show/paul-esterl/paul_esterl_lebensweg"
         },
+                {
+                }
         ]
     ],
     // Studentenschaft
@@ -398,7 +409,12 @@ var tile_sets = {
              image: "/files/square_thumbnails/85d7c1fa6710ae05e1de0c2d93b454af.jpg",
              text: "",
              href: "/exhibits/show/weltkriege-studenten/2--weltkrieg"
-        },[
+        }   
+        ]
+    ],
+    
+    '/exhibits/show/weltkriege-studenten/2--weltkrieg/':[
+    [
             {
                 title: "Alois Winklhofer",
                 image: "/files/square_thumbnails/ca8c6f623c01c8ed8a08cc65330e6333.jpg",
@@ -416,12 +432,9 @@ var tile_sets = {
                 image: "/files/square_thumbnails/50228cf422d497773b8bffdc6350dc96.jpg",
                 text: "",
                 href: "/exhibits/show/weltkriege-studenten/2--weltkrieg/johann-unterberg"
-            },
-            
+            }
+            ]
           ],
-            
-        ]
-    ],
     // /Lehre im Wandel
     // /Lehren und Lernen im 20. Jahrhundert
     '/exhibits/show/lehren-und-lernen': [
@@ -567,7 +580,17 @@ var tile_sets = {
                 text: "",
                 href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-"
             },
-            [
+            {
+                title: "Zeigen!",
+                image: "/files/square_thumbnails/71087e69bf7058c3f8520a34c6d65c6c.jpg",
+                text: "",
+                href: "/exhibits/show/ein-archiv-packt-aus/zeigen-"
+            } 
+        ]
+    ],
+    
+    '/exhibits/show/ein-archiv-packt-aus/':[
+                [
                 {
                     title: "Zahlen zur Studentenschaft",
                     image: "/files/square_thumbnails/64341a371ff28c3c1dceef4cec595495.jpg",
@@ -580,17 +603,8 @@ var tile_sets = {
                     text: "",
                     href: "/exhibits/show/ein-archiv-packt-aus/sozialstruktur"
                 }
-                
+                ]
             ],
-            {
-                title: "Zeigen!",
-                image: "/files/square_thumbnails/71087e69bf7058c3f8520a34c6d65c6c.jpg",
-                text: "",
-                href: "/exhibits/show/ein-archiv-packt-aus/zeigen-"
-            }
-            
-        ]
-    ],
     // Projekt
     // Das Projekt.
     // TODO
@@ -610,7 +624,7 @@ var tile_sets = {
             },
             {
                 title: "Oral History",
-                image: "/application/views/scripts/images/fallback-audio.png", //ist kein Foto vom Lehrststuhl, rechta aufpassen
+                image: "/files/square_thumbnails/d9f022396dee9edce5ebdf47c8b5e685.jpg",
                 text: "",
                 href: "/exhibits/show/projekt/oral-history"
             },
@@ -619,7 +633,8 @@ var tile_sets = {
                 image: "/files/square_thumbnails/be4c6e0770b719d88e6f7143694bc972.jpg",
                 text: "",
                 href: "/exhibits/show/projekt/datenbanken"
-            },
+            }
+            ],[
             {
                 title: "Projektarbeit im Digitalen",
                 image: "/files/square_thumbnails/d7bbb7c7714f3fb0387fc0f110f3032f.jpg",
@@ -637,7 +652,9 @@ var tile_sets = {
                 image: "/files/square_thumbnails/a735cf4307ea9e82589d5a42454f7b3b.jpg",
                 text: "",
                 href: "/exhibits/show/projekt/beitr--gerinnen"
-            }
+            },
+                {
+                }
         ]
     ],
     // / (homepage)
@@ -710,7 +727,8 @@ var tile_sets = {
                 image: "/files/square_thumbnails/4450a6172c2db0f384bff3a0714a05e1.jpg",
                 text: "",
                 href: "/exhibits/show/kunst-am-campus/ohne-titel"
-            },
+            }
+            ],[
             {
                 title: "Objekte",
                 image: "/files/square_thumbnails/934746bf19cd0381ba5db725e3760fb3.jpg",
@@ -728,7 +746,9 @@ var tile_sets = {
                 image: "/files/square_thumbnails/cebc3bdf9d700b378c900d940fc71ef8.jpg",
                 text: "",
                 href: "/exhibits/show/kunst-am-campus/grafitti"
-            }
+            },
+                {
+                }
         ]
     ],
     // Campus
@@ -773,6 +793,9 @@ var tile_sets = {
                 text: "",
                 href: "/exhibits/show/fernliegend/zeitleiste"
             },
+            {
+            }
+            ],[
             {
                 title: "Prag",
                 image: "/files/square_thumbnails/6eef20a20c061219715631e58b2008ac.jpg",
@@ -827,14 +850,8 @@ var tile_sets = {
                 image: "/files/square_thumbnails/e6b8ceb25350164be5d7ed97bfe15669.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998"
-            },[
-                {
-                    title: "Universität & Fakultäten",
-                    image: "/files/square_thumbnails/87185bbdc6e7ca97284fbbcd04ebe87c.jpg",
-                    text: "",
-                    href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998/universitaetfakultaeten"
-                }  
-              ],
+            }
+            ],[
             {
                 title: "PNP Sonderbeilage 2003",
                 image: "/files/square_thumbnails/93aa9aeef3a5b85d1c4720e8f1a077cb.jpg",
@@ -852,7 +869,26 @@ var tile_sets = {
                 image: "/files/square_thumbnails/93aa9aeef3a5b85d1c4720e8f1a077cb.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit"
-            },[
+            },
+                {
+                }
+        ]
+    ],
+    
+    
+    '/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998/': [
+    [
+                {
+                    title: "Universität & Fakultäten",
+                    image: "/files/square_thumbnails/87185bbdc6e7ca97284fbbcd04ebe87c.jpg",
+                    text: "",
+                    href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998/universitaetfakultaeten"
+                }  
+              ]
+    ],
+    
+    '/exhibits/show/sonderbeilagen/im-lauf-der-zeit/':[
+    [
                 {
                     title: "Im Lauf der Zeit",
                     image: "/files/square_thumbnails/3f7a8b7b62c8225c60ebc6776c62939e.jpg",
@@ -870,10 +906,10 @@ var tile_sets = {
                     image: "/files/square_thumbnails/b7ebbcf4451256e33ba125c7c790935d.jpg",
                     text: "",
                     href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit/paesident" //Rechtschreibfehler
-                }    
-            ],
+                }
         ]
-    ],
+      ],
+    
     // Aussenwirkung
     // Das Logo
     // TODO
@@ -1052,7 +1088,7 @@ var tile_sets = {
             },
             {
                 title: "Oral History",
-                image: "",
+                image: "/files/square_thumbnails/d9f022396dee9edce5ebdf47c8b5e685.jpg",
                 text: "",
                 href: "/items/browse?tags=Oral%20History"
             },
