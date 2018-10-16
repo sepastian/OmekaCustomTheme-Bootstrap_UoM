@@ -624,7 +624,7 @@ var tile_sets = {
             },
             {
                 title: "Wann?",
-                image: "/files/square_thumbnails/f8aed922846b5a0d224d4733384497ab.jpg",
+                image: "/files/square_thumbnails/e7b8ab530f2f992be0c542177ce4d25f.jpg",
                 text: "",
                 href: "/exhibits/show/fernliegend/zeitleiste"
             },
@@ -726,7 +726,7 @@ var tile_sets = {
         [
             {
                 title: "Quellen, digital",
-                image: "/files/square_thumbnails/b6494ec5b3a11d5a33fcaaa2b5cceb46.jpg",
+                image: "/files/square_thumbnails/cda3ae4ab032f9b848bdd5a0498c342c.jpg",
                 text: "",
                 href: "/exhibits/show/born-digital/born-digital"
             },
@@ -762,7 +762,7 @@ var tile_sets = {
             },
             {
                 title: "Audio",
-                image: "/files/square_thumbnails/5f7bcbdcca5727a8bf51ff6a0ed508ab.jpg",
+                image: "/files/square_thumbnails/b165021685fe6d88df34139985a9d3e6.jpg",
                 text: "",
                 href: "/items/browse?tags=Audio"
             },
