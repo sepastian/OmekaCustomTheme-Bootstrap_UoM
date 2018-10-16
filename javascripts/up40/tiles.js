@@ -339,11 +339,6 @@ var tile_sets = {
                 image: "/files/square_thumbnails/c2cd03070ae06e79977505897db31c54.jpg",
                 text: "",
                 href: "/exhibits/show/lehren-und-lernen/timeline"
-            }, {
-                title: "Boshof",
-                image: "", //Bild fehlt
-                text: "",
-                href: "/exhibits/show/lehren-und-lernen/boshof"
             }
         ]
     ],
@@ -542,7 +537,7 @@ var tile_sets = {
             },
             {
                 title: "Römischer Grabstein",
-                image: "", //hier fehlt das Bild!!
+                image: "/files/square_thumbnails/6a69ea5dd2f7916387a6a28210c69511.jpg",
                 text: "",
                 href: "/exhibits/show/besondere-orte/roemischer-grabstein"
             }
@@ -588,10 +583,10 @@ var tile_sets = {
                 href: "/exhibits/show/kunst-am-campus/kugeln"
             },
             {
-                title: "Grafitti",
+                title: "Graffiti",
                 image: "/files/square_thumbnails/cebc3bdf9d700b378c900d940fc71ef8.jpg",
                 text: "",
-                href: "/exhibits/show/kunst-am-campus/grafitti"
+                href: "/exhibits/show/kunst-am-campus/graffiti"
             },
                 {
                 }
