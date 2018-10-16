@@ -54,8 +54,8 @@
     <?php If (get_theme_option('Use Accessible Mega Menu')):
         queue_js_file(array('globals', 'vendor/jquery-accessibleMegaMenu'));
     endif; ?>
-    <?php queue_js_file(array('up40')); ?>
-    <?php queue_js_file(array('threejs/three.min','threejs/DDSLoader','threejs/MTLLoader','threejs/OBJLoader','threejs/OrbitControls','up40_3d')); ?>
+    <?php queue_js_file(array('up40/main','up40/nav','up40/tiles')); ?>
+    <?php queue_js_file(array('threejs/three.min','threejs/DDSLoader','threejs/MTLLoader','threejs/OBJLoader','threejs/OrbitControls','up40/3d')); ?>
     <?php // see footer for bootstrap-related js...
     echo head_js(); ?>
 </head>
@@ -84,6 +84,9 @@
             </div>
             <div class="col-sm-12" id="site-title-text">
               <span>Digitales Uni Museum Passau</span>
+            </div>
+            <div class="col-sm-12 small nav-container">
+              <div class="up40-nav"></div>
             </div>
         </div>
         <?php fire_plugin_hook('public_header', array('view' => $this)); ?>
@@ -136,4 +139,3 @@
 </div>
     <div class="container" id="wrapper">
         <div id="content">
-        <div class="up40-nav"></div>

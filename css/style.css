@@ -798,6 +798,7 @@ footer a {
 
 table.up40-tile-set {
   width: 100%;
+  margin: 0 0 30px 0;
 }
 
 table.up40-tile-set td {
@@ -867,8 +868,14 @@ p {
 }
 
 /* UP40 nav */
+.nav-container {
+  background-color: white;
+}
 .up40-nav {
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
+}
+.up40-nav i {
+  font-size: 0.7em;
 }
 .up40-nav-next, .up40-nav-prev, .up40-nav-parent {
   font-size: 0.8em;
