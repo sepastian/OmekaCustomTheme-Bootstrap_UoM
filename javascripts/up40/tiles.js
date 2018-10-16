@@ -104,7 +104,7 @@ var tile_sets = {
                 href: "/exhibits/show/wie-die-uni-wurde-was-sie/campus-gestalt"
             }, {
                 title: "Geschichtlicher Überblick",
-                image: "/files/square_thumbnails/648d8639a875fcd775ef45e6971b32b2.jpg", //FotoNeu
+                image: "/files/square_thumbnails/648d8639a875fcd775ef45e6971b32b2.jpg",
                 text: "",
                 href: "/exhibits/show/wie-die-uni-wurde-was-sie/geschichtlicher-ueberblick"
             }, {
@@ -130,31 +130,31 @@ var tile_sets = {
         [
             {
                 title: "Überblick",
-                image: "", //Grafik/nur Schrift
+                image: "/files/square_thumbnails/bb0f426b93a69d1407d9c1ef4d4a26bf.jpg",
                 text: "",
                 href: "/exhibits/show/warum-passau/--berblick"
             }, {
                 title: "Für Niederbayern",
-                image: "/files/square_thumbnails/7abf49a756ede009884813af70c96f02.jpg", //veraltet
+                image: "/files/square_thumbnails/7abf49a756ede009884813af70c96f02.jpg",
                 text: "",
                 href: "/exhibits/show/spiegel_hochschulgeschichte/jahresbericht#?c=0&m=0&s=0&cv=0"
             }, {
                 title: "Für Bildung",
-                image: "/files/square_thumbnails/7abf49a756ede009884813af70c96f02.jpg", //veraltet
+                image: "/files/square_thumbnails/5925672c913868a4634e1f8a680918a2.jpg",
                 text: "",
                 href: "/exhibits/show/spiegel_hochschulgeschichte/jahresbericht#?c=0&m=0&s=0&cv=0"
             }
         ],[
             {
                 title: "Für Passau",
-                image: "/files/square_thumbnails/110f5bd92997fd7bdb17324ee905e30b.jpg", //veraltet
+                image: "/files/square_thumbnails/110f5bd92997fd7bdb17324ee905e30b.jpg",
                 text: "",
                 href: "/exhibits/show/spiegel_hochschulgeschichte/jahresbericht#?c=0&m=0&s=0&cv=0"
             }, {
                 title: "Förderer",
-                image: "",
+                image: "/files/square_thumbnails/726194b8d33332e801b65df421c1c577.jpg",
                 text: "",
-                href: "/exhibits/show/spiegel_hochschulgeschichte/jahresbericht#?c=0&m=0&s=0&cv=0"
+                href: "/exhibits/show/warum-passau/foerderer"
             }, {
 
             }
@@ -198,14 +198,14 @@ var tile_sets = {
             },
         ],[
             {
-                title: "Noten",
+                title: "Noten und mehr",
                 image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
                 text: "",
                 href: "/exhibits/show/studentenleben/noten"
             },
             {
                 title: "Timeline",
-                image: "/files/square_thumbnails/21d7445429a759c8a369beabf581024e.jpg",
+                image: "/files/square_thumbnails/975da074b6b8a5cf83d29c0423cee155.jpg",
                 text: "",
                 href: "/exhibits/show/studentenleben/timeline"
             },
@@ -336,7 +336,7 @@ var tile_sets = {
                 href: "/exhibits/show/lehren-und-lernen/weimarer-zeit"
             }, {
                 title: "Timeline",
-                image: "", //Grafik/nur Text
+                image: "/files/square_thumbnails/c2cd03070ae06e79977505897db31c54.jpg",
                 text: "",
                 href: "/exhibits/show/lehren-und-lernen/timeline"
             }, {
@@ -455,30 +455,27 @@ var tile_sets = {
                 text: "",
                 href: "/exhibits/show/ein-archiv-packt-aus/zeigen-"
             }
+        ],[
+          {
+              title: "Zahlen zur Studentenschaft",
+              image: "/files/square_thumbnails/64341a371ff28c3c1dceef4cec595495.jpg",
+              text: "",
+              href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/zahlen"
+          },
+          {
+              title: "Sozialstruktur",
+              image: "/files/square_thumbnails/e1fd14589874a5dcf34126a33772115a.jpg",
+              text: "",
+              href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/sozialstruktur"
+          }
         ]
     ],
 
-    '/exhibits/show/ein-archiv-packt-aus':[
-        [
-            {
-                title: "Zahlen zur Studentenschaft",
-                image: "/files/square_thumbnails/64341a371ff28c3c1dceef4cec595495.jpg",
-                text: "",
-                href: "/exhibits/show/ein-archiv-packt-aus/zahlen"
-            },
-            {
-                title: "Sozialstruktur",
-                image: "/files/square_thumbnails/e1fd14589874a5dcf34126a33772115a.jpg",
-                text: "",
-                href: "/exhibits/show/ein-archiv-packt-aus/sozialstruktur"
-            }
-        ]
-    ],
     '/exhibits/show/projekt': [
         [
             {
                 title: "Ablauf",
-                image: "/files/square_thumbnails/17c81fcc5e59206c83aceca549db9ec7.jpg",
+                image: "/files/square_thumbnails/68648141dd6080c1242d47d89d6c8fb5.jpg",
                 text: "",
                 href: "/exhibits/show/projekt/ablauf"
             },
@@ -682,14 +679,14 @@ var tile_sets = {
                 image: "/files/square_thumbnails/5e7a50167eb680dc92a7a2eec2df6af3.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1993"
-            },
+            }
+          ],[
             {
                 title: "PNP Sonderbeilage 1998",
                 image: "/files/square_thumbnails/e6b8ceb25350164be5d7ed97bfe15669.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998"
-            }
-        ],[
+            },
             {
                 title: "PNP Sonderbeilage 2003",
                 image: "/files/square_thumbnails/93aa9aeef3a5b85d1c4720e8f1a077cb.jpg",
@@ -701,14 +698,6 @@ var tile_sets = {
                 image: "/files/square_thumbnails/254846bc44f9869c48290d95e3adb476.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2008"
-            },
-            {
-                title: "Im Lauf der Zeit",
-                image: "/files/square_thumbnails/93aa9aeef3a5b85d1c4720e8f1a077cb.jpg",
-                text: "",
-                href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit"
-            },
-            {
             }
         ]
     ],
@@ -719,28 +708,6 @@ var tile_sets = {
                 image: "/files/square_thumbnails/87185bbdc6e7ca97284fbbcd04ebe87c.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998/universitaetfakultaeten"
-            }
-        ]
-    ],
-    '/exhibits/show/sonderbeilagen/im-lauf-der-zeit': [
-        [
-            {
-                title: "Im Lauf der Zeit",
-                image: "/files/square_thumbnails/3f7a8b7b62c8225c60ebc6776c62939e.jpg",
-                text: "",
-                href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit/titelseiten"
-            },
-            {
-                title: "Das Grußwort über die Jahre",
-                image: "/files/square_thumbnails/19eb087adcb7a7747e546db23d8490b7.jpg",
-                text: "",
-                href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit/das-grusswort"
-            },
-            {
-                title: "Der Präsident kommt zu Wort!",
-                image: "/files/square_thumbnails/b7ebbcf4451256e33ba125c7c790935d.jpg",
-                text: "",
-                href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit/paesident" //Rechtschreibfehler
             }
         ]
     ],
@@ -777,7 +744,7 @@ var tile_sets = {
         ],[
             {
                 title: "Design",
-                image: "/files/square_thumbnails/d7bbb7c7714f3fb0387fc0f110f3032f.jpg",
+                image: "/files/square_thumbnails/ee225b528677dfed58051bb2b67c3f74.jpg",
                 text: "",
                 href: "/exhibits/show/born-digital/design"
             },
@@ -890,7 +857,7 @@ var tile_sets = {
             },
             {
                 title: "Kolleg",
-                image: "",
+                image: "/files/square_thumbnails/9495233de2d490077862837e40050ae5.jpg",
                 text: "",
                 href: "/items/browse?tags=Kolleg"
             },
