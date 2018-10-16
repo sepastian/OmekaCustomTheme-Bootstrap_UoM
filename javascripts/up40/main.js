@@ -21,7 +21,7 @@ function inject_tile_sets(elements) {
     // A page may host multiple tile sets.
     jQuery(elements).each(function(_,e) {
         var id = jQuery(e).attr('id');
-        if (! id) {
+        if (! id || ! tile_sets[id]) {
             // If no CSS ID has been specified,
             // lookup tile set by pathname.
             id = location.pathname;
@@ -62,6 +62,7 @@ function inject_tile_sets(elements) {
 }
 
 function inject_nav() {
+    /*
     var indexes = {},
         html = [];
     nav.forEach(function(n,i){
@@ -100,6 +101,7 @@ function inject_nav() {
         ]
     html = prefix.concat(html).concat(postfix)
     jQuery('.up40-nav').replaceWith(html.join(''))
+    */
 }
 
 function build_nav() {
@@ -108,6 +110,7 @@ function build_nav() {
     })
 }
 
+/*
 var tile_sets = {
     // / (homepage)
     'home-museum': [
@@ -431,22 +434,6 @@ var tile_sets = {
     '/exhibits/show/projekt': [
     ],
     // / (homepage)
-    '/start': [
-        [
-            {
-                title: "Museum",
-                image: "/files/square_thumbnails/37731211bdde20e58feb08413bac0089.jpg",
-                text: "",
-                href: "/museum"
-            },
-            {
-                title: "Depot",
-                image: "/files/square_thumbnails/be4c6e0770b719d88e6f7143694bc972.jpg",
-                text: "",
-                href: "/depot"
-            }
-        ]
-    ],
     // Campus
     // Besondere Orte
     // TODO
@@ -641,3 +628,4 @@ var tile_sets = {
         ]
     ]
 }
+*/
