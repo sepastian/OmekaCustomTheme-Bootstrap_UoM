@@ -876,8 +876,18 @@ p {
   text-align: center;
 }
 .up40-nav, .up40-nav a {
-  font-size: 1.0em;
   color: #aaaaaa;
+}
+.up40-nav .links a {
+  font-size: 0.8em;
+}
+.up40-nav .dots {
+  font-size: 0.7em;
+}
+.up40-nav .dots .separator {
+  color: #ee7000;
+  position: relative;
+  top: -0.1em;
 }
 .up40-nav td.current i {
   color: #ee7000;
@@ -888,15 +898,19 @@ p {
   padding: 0 1px 0 1px;
 }
 .up40-nav .links {
-  margin: 10px 0 10px 0;
+  margin: 10px 0 15px 0;
   width: 100%;
+}
+.up40-nav .breadcrumb {
+  background-color: transparent;
+  margin: 0;
 }
 .up40-nav .dots {
   margin: 0 0 10px 0;
   width: 100%;
 }
-.up40-nav .dots td {
-
+.up40-nav .links td {
+  vertical-align: middle;
 }
 .up40-nav .dots td.current {
 

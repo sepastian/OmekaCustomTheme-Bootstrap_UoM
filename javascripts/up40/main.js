@@ -66,13 +66,19 @@ function inject_nav() {
     // NAV = ELEM
     // ELEM = { path: "", title: "", children: [ ELEM, ... ] }
 
+    if (location.pathname == '/') {
+        return
+    }
+
     // Convert nav to flat list, depth first.
     var stack = [nav],
         list = [],
         position = 0,
         i = 0,
         html = [],
-        ancestors = 0;
+        ancestor_id = 0, // unique ID for each ancestor
+        ancestors = {},
+        current_exhibition = null;
     while (stack.length > 0) {
         var current = stack.pop()
         var children = (current.children || []).reverse();
@@ -85,22 +91,24 @@ function inject_nav() {
         if (current.path == location.pathname) {
             position = i;
         }
-        Object.assign(current, { parent: (list[list.length-1]||{}).path })
+        if (current.ancestors.length == 1) {
+            current_exhibition = current
+        }
+        Object.assign(current, { predecessor: (list[list.length-1]||{}).path, exhibition: current_exhibition })
         delete(current.children)
         list.push(current)
+        ancestors[ancestor_id] = current
         children.forEach(function(child){
-            ancestors += 1
-            //var level = current.ancestors[current.ancestors.length-1] + 1 || 0
             child.ancestors = current.ancestors.slice(0)
-            child.ancestors.push(ancestors)
+            child.ancestors.push(ancestor_id)
             stack.push(child)
         })
+        ancestor_id += 1
         i += 1
-        console.log(current.path, current.ancestors)
+        console.log(current)
     }
 
-    // Render navigation.
-    // Add back/forward.
+    // Render back/current/forward text and buttons.
     var back = ""
     if (position > 0) {
         back = "<i class='fa fa-arrow-left arrow'></i>"
@@ -116,17 +124,34 @@ function inject_nav() {
         forward = '<a class="btn btn-default" href="' + e.path + '">' + title + forward + "</a>"
     }
     var current = list[position]
-    var title = "<strong>" + current.title + "</strong>"
-    html = html.concat(["<table class='links'><tr><td class='first'>", back, '</td><td>', title, '</td><td class="last">', forward,"</tr></table>"])
+    var breadcrumb = "<ol class='breadcrumb'>"
+    if (current.exhibition) {
+        var e = current.exhibition
+        breadcrumb += "<li><a href='/museum'>Museum</a></li>"
+        breadcrumb += "<li><a href='" + e.path + "'>" + e.title + "</a></li>"
+    }
+    breadcrumb += "<li class='active'>" + current.title + "</li></ol>"
+    html = html.concat(["<table class='links'><tr><td class='first'>", back, '</td><td>', breadcrumb, '</td><td class="last">', forward,"</tr></table>"])
 
-    // Render list.
+    // Render clickable dots with tooltips.
     var i = 0,
         tds = [];
     list.forEach(function(e) {
+        // Display a separator between exhibitions.
+        var separator = ""
+        if (e.ancestors.length == 1) {
+            separator = "<span class='separator'> | </span>"
+        }
+        // Display exhibition and title in tooltip.
+        var title = e.title
+        if (e.exhibition) {
+            title = e.exhibition.title + " - " + title
+        }
+        var a = "<a href=" + e.path + " data-toggle='tooltip' data-placement='bottom' title='" + title + "'>"
         if (i == position) {
-            tds.push("<td class='current'><i class='fa fa-square'></i></td>")
+            tds.push("<td class='current " + ancestors + "'>" + separator + a + "<i class='fa fa-square'></i></a></td>")
         } else {
-            tds.push("<td class=''><i class='fa fa-square-o'></i></td>")
+            tds.push("<td class='" + ancestors + "'>" + separator + a + "<i class='fa fa-square-o'></i></a></td>")
         }
         i += 1
     })
@@ -135,4 +160,7 @@ function inject_nav() {
     // Enclose nav within <div>.
     html = ["<div class='up40-nav'>"].concat(html).concat("</div>")
     jQuery('.up40-nav').replaceWith(html.join(''))
+
+    // Enable tooltips.
+    jQuery('[data-toggle="tooltip"]').tooltip()
 }

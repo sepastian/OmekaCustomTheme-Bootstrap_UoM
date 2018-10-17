@@ -256,310 +256,247 @@ var nav = {
             path: '/aussenwirkung',
             title: 'Aussenwirkung',
             children: [
-              {
-                path: "/exhibits/show/fernliegend",
-                title: "Fernliegend",
-                children: [
-                  {
-                    path: "/exhibits/show/fernliegend/wo-",
-                    title: "Wo?"
-                  },
-                  {
-                    path: "/exhibits/show/fernliegend/zeitleiste",
-                    title: "Wann?"
-                  },
-                  {
-                    path: "/exhibits/show/fernliegend/prag",
-                    titel: "Prag"
-                  },
-                  {
-                    path: "/exhibits/show/fernliegend/tours",
-                    titel: "Tours"
-                  },
-                  {
-                    path: "/exhibits/show/fernliegend/lviv",
-                    title: "Lviv"
-                  }
-                ]
-              },
-              {
-                path: "/exhibits/show/sonderbeilagen",
-                title: "Was war wichtig?",
-                children: [
-                  {
-                    path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1978",
-                    title: "PNP Sonderbeilage 1978"
-                  },
-                  {
-                    path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1983",
-                    title: "PNP Sonerbeilage 1983"
-                  },
-                  {
-                    path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1993",
-                    title: "PNP Sonderbeilage 1993"
-                  },
-                  {
-                    path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998",
-                    title: "PNP SOnderbeilage 1998"
-                  },
-                  {
-                    path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2003",
-                    title: "PNP Sonderbeilage 2003"
-                  },
-                  {
-                    path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2008",
-                    title: "PNP Sonderbeilagen 2008"
-                  }
-                ]
-              },
-              {
-                path: "/exhibits/show/logo",
-                title: "Das Logo",
-                children: [
-                  {
-                    path: "/exhibits/show/logo/logo",
-                    titel: "Brief und Siegel"
-                  },
-                  {
-                    path: "/exhibits/show/logo/der--madonnenstreit-",
-                    title: "Der madonnenstreit"
-                  }
-                ]
-              },
-              {
-                path: "/exhibits/show/born-digital";
-                title: "Born digital",
-                children: [
-              {
-                path: "/exhibits/show/born-digital/born-digital",
-                title: "Quellen, digital"
-              },
-              {
-                path: "/exhibits/show/born-digital/funktion",
-                title: "Funktion"
-              },
-              {
-                path: "/exhibits/show/born-digital/design",
-                title: "Design"
-              },
-              {
-                path: "/exhibits/show/born-digital/fakultaeten",
-                title: "Fakultäten"
-              }
-            ]
+                {
+                    path: "/exhibits/show/fernliegend",
+                    title: "Fernliegend",
+                    children: [
+                        {
+                            path: "/exhibits/show/fernliegend/wo-",
+                            title: "Wo?"
+                        },
+                        {
+                            path: "/exhibits/show/fernliegend/zeitleiste",
+                            title: "Wann?"
+                        },
+                        {
+                            path: "/exhibits/show/fernliegend/prag",
+                            title: "Prag"
+                        },
+                        {
+                            path: "/exhibits/show/fernliegend/tours",
+                            title: "Tours"
+                        },
+                        {
+                            path: "/exhibits/show/fernliegend/lviv",
+                            title: "Lviv"
+                        }
+                    ]
+                },
+                {
+                    path: "/exhibits/show/sonderbeilagen",
+                    title: "Was war wichtig?",
+                    children: [
+                        {
+                            path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1978",
+                            title: "PNP Sonderbeilage 1978"
+                        },
+                        {
+                            path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1983",
+                            title: "PNP Sonerbeilage 1983"
+                        },
+                        {
+                            path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1993",
+                            title: "PNP Sonderbeilage 1993"
+                        },
+                        {
+                            path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998",
+                            title: "PNP SOnderbeilage 1998"
+                        },
+                        {
+                            path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2003",
+                            title: "PNP Sonderbeilage 2003"
+                        },
+                        {
+                            path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2008",
+                            title: "PNP Sonderbeilagen 2008"
+                        }
+                    ]
+                },
+                {
+                    path: "/exhibits/show/logo",
+                    title: "Das Logo",
+                    children: [
+                        {
+                            path: "/exhibits/show/logo/logo",
+                            title: "Brief und Siegel"
+                        },
+                        {
+                            path: "/exhibits/show/logo/der--madonnenstreit-",
+                            title: "Der Madonnenstreit"
+                        }
+                    ]
+                },
+                {
+                    path: "/exhibits/show/born-digital",
+                    title: "Born digital",
+                    children: [
+                        {
+                            path: "/exhibits/show/born-digital/born-digital",
+                            title: "Quellen, digital"
+                        },
+                        {
+                            path: "/exhibits/show/born-digital/funktion",
+                            title: "Funktion"
+                        },
+                        {
+                            path: "/exhibits/show/born-digital/design",
+                            title: "Design"
+                        },
+                        {
+                            path: "/exhibits/show/born-digital/fakultaeten",
+                            title: "Fakultäten"
+                        }
+                    ]
+                }
+            ],
         },
         {
             path: '/campus',
             title: 'Campus',
             children: [
-              {
-                path: "/exhibits/show/besondere-orte",
-                titel: "Besondere Orte",
-                children: [
-                  {
-                    path: "/exhibits/show/besondere-orte/kapelle-buergerkongregatio",
-                    title: "Die Kapelle der Bürgerkongregation"
-                  },
-                  {
-                    path: "/exhibits/show/besondere-orte/philosophicum-bilder",
-                    title: "Das Philosophicum"
-                  },
-                  {
-                    path: "/exhibits/show/besondere-orte/polyeder",
-                    title: "Der Polyeder"
-                  },
-                  {
-                    path: "/exhibits/show/besondere-orte/roemischer-grabstein",
-                    title: "Römischer Grabstein"
-                  }
-                ]
-              },
-              {
-                path: "/exhibits/show/kunst-am-campus",
-                titel: "MEINE Kunst am Campus",
-                children: [
-                  {
-                    path: "/exhibits/show/kunst-am-campus/wolf",
-                    title: "Wolf"
-                  },
-                  {
-                    path: "/exhibits/show/kunst-am-campus/boot",
-                    title: "Boot"
-                  },
-                  {
-                    path: "/exhibits/show/kunst-am-campus/segel",
-                    title: "Segel"
-                  },
-                  {
-                    path: "/exhibits/show/kunst-am-campus/ohne-titel",
-                    title: "OT"
-                  },
-                  {
-                    path: "/exhibits/show/kunst-am-campus/objekte",
-                    title: "Objekte"
-                  },
-                  {
-                    path: "/exhibits/show/kunst-am-campus/kugeln",
-                    title: "Kugeln"
-                  },
-                  {
-                    path: "/exhibits/show/kunst-am-campus/graffiti",
-                    title: "Graffiti"
-                  }
-                ]
-              },
-              {
-                path: "/exhibits/show/stadt-und-uni",
-                title: "Die Stadt und die Uni",
-                children: [
-                  {
-                    path: "/exhibits/show/stadt-und-uni/die-studenten-kommen-",
-                    title: "Die Studenten kommen!"
-                  },
-                  {
-                    path: "/exhibits/show/stadt-und-uni/das-studenten-ghetto",
-                    title: "Das Studenten-Ghetto"
-                  },
-                  {
-                    path: "/exhibits/show/stadt-und-uni/passau-r--umt-auf",
-                    title: "Passau räumt auf"
-                  }
-                ]
-              },
+                {
+                    path: "/exhibits/show/besondere-orte",
+                    title: "Besondere Orte",
+                    children: [
+                        {
+                            path: "/exhibits/show/besondere-orte/kapelle-buergerkongregatio",
+                            title: "Die Kapelle der Bürgerkongregation"
+                        },
+                        {
+                            path: "/exhibits/show/besondere-orte/philosophicum-bilder",
+                            title: "Das Philosophicum"
+                        },
+                        {
+                            path: "/exhibits/show/besondere-orte/polyeder",
+                            title: "Der Polyeder"
+                        },
+                        {
+                            path: "/exhibits/show/besondere-orte/roemischer-grabstein",
+                            title: "Römischer Grabstein"
+                        }
+                    ]
+                },
+                {
+                    path: "/exhibits/show/kunst-am-campus",
+                    title: "MEINE Kunst am Campus",
+                    children: [
+                        {
+                            path: "/exhibits/show/kunst-am-campus/wolf",
+                            title: "Wolf"
+                        },
+                        {
+                            path: "/exhibits/show/kunst-am-campus/boot",
+                            title: "Boot"
+                        },
+                        {
+                            path: "/exhibits/show/kunst-am-campus/segel",
+                            title: "Segel"
+                        },
+                        {
+                            path: "/exhibits/show/kunst-am-campus/ohne-titel",
+                            title: "OT"
+                        },
+                        {
+                            path: "/exhibits/show/kunst-am-campus/objekte",
+                            title: "Objekte"
+                        },
+                        {
+                            path: "/exhibits/show/kunst-am-campus/kugeln",
+                            title: "Kugeln"
+                        },
+                        {
+                            path: "/exhibits/show/kunst-am-campus/graffiti",
+                            title: "Graffiti"
+                        }
+                    ]
+                },
+                {
+                    path: "/exhibits/show/stadt-und-uni",
+                    title: "Die Stadt und die Uni",
+                    children: [
+                        {
+                            path: "/exhibits/show/stadt-und-uni/die-studenten-kommen-",
+                            title: "Die Studenten kommen!"
+                        },
+                        {
+                            path: "/exhibits/show/stadt-und-uni/das-studenten-ghetto",
+                            title: "Das Studenten-Ghetto"
+                        },
+                        {
+                            path: "/exhibits/show/stadt-und-uni/passau-r--umt-auf",
+                            title: "Passau räumt auf"
+                        }
+                    ]
+                },
             ]
         },
         {
             path: '/projekt',
             title: 'Projekt',
             children: [
-              {
-                path: "/exhibits/show/projekt",
-                title: "Projekt",
-                children: [
-                  {
-                    path: "/exhibits/show/projekt/ablauf",
-                    titel: "Ablauf"
-                  },
-                  {
-                    path: "/exhibits/show/projekt/digitalisierung",
-                    title: "Digitalisierung"
-                  },
-                  {
-                    path: "/exhibits/show/projekt/oral-history",
-                    titel: "Oral History"
-                  },
-                  {
-                    path: "/exhibits/show/projekt/datenbanken",
-                    titel: "Virtuelles Museum/ Datenbanken"
-                  },
-                  {
-                    path: "/exhibits/show/projekt/projektarbeit",
-                    title: "Projektarbeit im Digitalen"
-                  },
-                  {
-                    path: "/exhibits/show/projekt/projektarbeit-f--r-kultur",
-                    title: "Projektarbeit für Kultur"
-                  },
-                  {
-                    path: "/exhibits/show/projekt/beitr--gerinnen",
-                    title: "BeiträgerInnen"
-                  }
-                ]
-              },
-              {
-                path: "/exhibits/show/ein-archiv-packt-aus",
-                title: "Ein Archiv packt aus.",
-                children: [
-                  {
-                    path: "/exhibits/show/ein-archiv-packt-aus/bewahren-",
-                    title: "Bewahren!"
-                  },
-                  {
-                    path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-",
-                    title: "Aufarbeiten",
+                {
+                    path: "/exhibits/show/projekt",
+                    title: "Projekt",
                     children: [
-                      {
-                        path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/zahlen",
-                        title: "Zahlen zur Studentenschaft"
-                      },
-                      {
-                        path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/sozialstruktur",
-                        title: "Sozialstruktur"
-                      }
+                        {
+                            path: "/exhibits/show/projekt/ablauf",
+                            title: "Ablauf"
+                        },
+                        {
+                            path: "/exhibits/show/projekt/digitalisierung",
+                            title: "Digitalisierung"
+                        },
+                        {
+                            path: "/exhibits/show/projekt/oral-history",
+                            title: "Oral History"
+                        },
+                        {
+                            path: "/exhibits/show/projekt/datenbanken",
+                            title: "Virtuelles Museum/ Datenbanken"
+                        },
+                        {
+                            path: "/exhibits/show/projekt/projektarbeit",
+                            title: "Projektarbeit im Digitalen"
+                        },
+                        {
+                            path: "/exhibits/show/projekt/projektarbeit-f--r-kultur",
+                            title: "Projektarbeit für Kultur"
+                        },
+                        {
+                            path: "/exhibits/show/projekt/beitr--gerinnen",
+                            title: "BeiträgerInnen"
+                        }
                     ]
-                  },
-                  {
-                    path: "/exhibits/show/ein-archiv-packt-aus/zeigen-",
-                    title: "Zeigen!"
-                  }
-                ]
-              }
+                },
+                {
+                    path: "/exhibits/show/ein-archiv-packt-aus",
+                    title: "Ein Archiv packt aus.",
+                    children: [
+                        {
+                            path: "/exhibits/show/ein-archiv-packt-aus/bewahren-",
+                            title: "Bewahren!"
+                        },
+                        {
+                            path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-",
+                            title: "Aufarbeiten",
+                            children: [
+                                {
+                                    path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/zahlen",
+                                    title: "Zahlen zur Studentenschaft"
+                                },
+                                {
+                                    path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/sozialstruktur",
+                                    title: "Sozialstruktur"
+                                }
+                            ]
+                        },
+                        {
+                            path: "/exhibits/show/ein-archiv-packt-aus/zeigen-",
+                            title: "Zeigen!"
+                        }
+                    ]
+                }
             ]
         }
     ]
 }
-
-
-/*
-{ path: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1978", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1983", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1993", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2003", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2008", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/das-grusswort", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/paesident", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/titelseiten", title: "" }
-{ path: "/exhibits/show/sonderbeilagen/universitaetfakultaeten", title: "" }
-
-{ path: "/exhibits/show/fernliegend/lviv", title: "" }
-{ path: "/exhibits/show/fernliegend/prag", title: "" }
-{ path: "/exhibits/show/fernliegend/tours", title: "" }
-{ path: "/exhibits/show/fernliegend/verona", title: "" }
-{ path: "/exhibits/show/fernliegend/wo-", title: "" }
-{ path: "/exhibits/show/fernliegend/zeitleiste", title: "" }
-
-{ path: "/exhibits/show/spiegel_hochschulgeschichte/jahresbericht", title: "" }
-{ path: "/exhibits/show/spiegel_hochschulgeschichte/nachrichten", title: "" }
-
-{ path: "/exhibits/show/kunst-am-campus/boot", title: "" }
-{ path: "/exhibits/show/kunst-am-campus/graffiti", title: "" }
-{ path: "/exhibits/show/kunst-am-campus/kugeln", title: "" }
-{ path: "/exhibits/show/kunst-am-campus/objekte", title: "" }
-{ path: "/exhibits/show/kunst-am-campus/ohne-titel", title: "" }
-{ path: "/exhibits/show/kunst-am-campus/segel", title: "" }
-{ path: "/exhibits/show/kunst-am-campus/wolf", title: "" }
-
-{ path: "/exhibits/show/logo/der--madonnenstreit-", title: "" }
-{ path: "/exhibits/show/logo/logo", title: "" }
-
-{ path: "/exhibits/show/besondere-orte/kapelle-buergerkongregatio", title: "" }
-{ path: "/exhibits/show/besondere-orte/philosophicum-bilder", title: "" }
-{ path: "/exhibits/show/besondere-orte/polyeder", title: "" }
-{ path: "/exhibits/show/besondere-orte/roemischer-grabstein", title: "" }
-
-
-{ path: "/exhibits/show/born-digital/born-digital", title: "" }
-{ path: "/exhibits/show/born-digital/design", title: "" }
-{ path: "/exhibits/show/born-digital/fakultaeten", title: "" }
-{ path: "/exhibits/show/born-digital/funktion", title: "" }
-
-{ path: "/exhibits/show/projekt/ablauf", title: "" }
-{ path: "/exhibits/show/projekt/beitr--gerinnen", title: "" }
-{ path: "/exhibits/show/projekt/datenbanken", title: "" }
-{ path: "/exhibits/show/projekt/digitalisierung", title: "" }
-{ path: "/exhibits/show/projekt/oral-history", title: "" }
-{ path: "/exhibits/show/projekt/projektarbeit", title: "" }
-{ path: "/exhibits/show/projekt/projektarbeit-f--r-kultur", title: "" }
-
-{ path: "/exhibits/show/stadt-und-uni/das-studenten-ghetto", title: "" }
-{ path: "/exhibits/show/stadt-und-uni/die-studenten-kommen-", title: "" }
-{ path: "/exhibits/show/stadt-und-uni/passau-r--umt-auf", title: "" }
-
-{ path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-", title: "" }
-{ path: "/exhibits/show/ein-archiv-packt-aus/bewahren-", title: "" }
-{ path: "/exhibits/show/ein-archiv-packt-aus/zeigen-", title: "" }
-{ path: "/exhibits/show/ein-archiv-packt-aus/sozialstruktur", title: "" }
-{ path: "/exhibits/show/ein-archiv-packt-aus/zahlen", title: "" }
-*/
