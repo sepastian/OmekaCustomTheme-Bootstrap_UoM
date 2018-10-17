@@ -1,4 +1,9 @@
-        </div><!-- end content -->
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="up40-nav-buttons"></div>
+              </div>
+
+
+</div><!-- end content -->
         <footer>
             <div class="row">
                 <div id="footer-text" class="col-sm-9">
@@ -65,20 +70,18 @@
         /*Omeka.displayGridRotator();*/
         <?php endif; ?>
 
-        /* XXXX */
-        jQuery('body.exhibits.summary .primary .col-sm-9').removeClass('col-sm-9').addClass('col-sm-12')
-        //jQuery('body.exhibits.summary .primary .col-sm-3').remove()
-
-        // Inject tiles into current page,
-        // replacing placeholders with class '.up40-tile-set'.
-        inject_tile_sets(jQuery('.up40-tile-set'));
-});
-        inject_nav();
         // Load 3D models, if present.
         var containers = jQuery('.threejs');
         if (containers.length > 0) {
             load_3d_model(containers[0]);
         }
+
+      // Inject tiles into current page,
+      // replacing placeholders with class '.up40-tile-set'.
+      inject_tile_sets(jQuery('.up40-tile-set'));
+      inject_nav();
+
+      });
     </script>
 
     <?php if (get_theme_option('Use Google Analytics') && $googleAccount = get_theme_option('Google Analytics Account')): ?>

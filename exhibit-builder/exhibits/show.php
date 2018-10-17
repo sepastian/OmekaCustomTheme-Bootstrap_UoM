@@ -16,6 +16,7 @@ echo head(array(
       <div id="exhibit-blocks" role="main">
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>
+      <!--
       <nav class="pager" id="exhibit-page-navigation">
         <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
         <div id="exhibit-nav-prev" class="previous">
@@ -31,6 +32,7 @@ echo head(array(
           <?php echo exhibit_builder_page_trail(); ?>
         </div>
       </nav>
+      -->
     </div>
   </div>
 </div>

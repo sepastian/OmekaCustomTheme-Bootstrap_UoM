@@ -465,9 +465,8 @@ margin-right: 5px;
 }
 
 footer {
-    margin-top: 25px;
+    margin-top: 55px;
     padding-top: 15px;
-    /*border-top: 1px solid grey;*/
     font-size: 11px;
     line-height: 15px;
     font-weight:normal;
@@ -873,13 +872,12 @@ p {
 }
 .up40-nav {
   margin: 0 0 20px 0;
-  text-align: center;
 }
 .up40-nav, .up40-nav a {
   color: #aaaaaa;
 }
-.up40-nav .links a {
-  font-size: 0.8em;
+.up40-nav .links a, .up40-nav-buttons .links a {
+
 }
 .up40-nav .dots {
   font-size: 0.7em;
@@ -897,32 +895,30 @@ p {
   position: relative;
   padding: 0 1px 0 1px;
 }
-.up40-nav .links {
+.up40-nav .links, .up40-nav-buttons .links {
   margin: 10px 0 15px 0;
   width: 100%;
 }
 .up40-nav .breadcrumb {
   background-color: transparent;
-  margin: 0;
+  margin: 0 0 30px 0;
+  padding: 0;
 }
 .up40-nav .dots {
   margin: 0 0 10px 0;
   width: 100%;
 }
-.up40-nav .links td {
-  vertical-align: middle;
-}
-.up40-nav .dots td.current {
-
-
-}
-.up40-nav .links td {
-  width: 33%;
+.up40-nav .links td, .up40-nav-buttons .links td,  {
+  width: 50%;
   text-align: center;
 }
-.up40-nav .links td.first {
+.up40-nav .links td.first, .up40-nav-buttons .links td.first {
   text-align: left;
 }
-.up40-nav .links td.last {
+.up40-nav .links td.last, .up40-nav-buttons .links td.first {
   text-align: right;
+}
+.up40-nav-buttons: {
+  margin: 20px 0 0 0;
+  border-bottom: 1px solid #aaaaaa;
 }

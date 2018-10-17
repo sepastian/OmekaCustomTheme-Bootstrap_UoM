@@ -674,14 +674,14 @@ var tile_sets = {
                 image: "/files/square_thumbnails/5e7a50167eb680dc92a7a2eec2df6af3.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1993"
-            }
-          ],[
+            },
             {
                 title: "PNP Sonderbeilage 1998",
                 image: "/files/square_thumbnails/e6b8ceb25350164be5d7ed97bfe15669.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998"
             },
+        ],[
             {
                 title: "PNP Sonderbeilage 2003",
                 image: "/files/square_thumbnails/93aa9aeef3a5b85d1c4720e8f1a077cb.jpg",
@@ -693,6 +693,14 @@ var tile_sets = {
                 image: "/files/square_thumbnails/254846bc44f9869c48290d95e3adb476.jpg",
                 text: "",
                 href: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2008"
+            },
+            {
+                title: "Im Lauf der Zeit",
+                image: "/files/square_thumbnails/19eb087adcb7a7747e546db23d8490b7.jpg",
+                text: "",
+                href: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit"
+            },
+            {
             }
         ]
     ],

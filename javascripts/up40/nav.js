@@ -277,6 +277,10 @@ var nav = {
                             title: "Tours"
                         },
                         {
+                            path: "/exhibits/show/fernliegend/verona",
+                            title: "Verona"
+                        },
+                        {
                             path: "/exhibits/show/fernliegend/lviv",
                             title: "Lviv"
                         }
@@ -309,6 +313,10 @@ var nav = {
                         {
                             path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2008",
                             title: "PNP Sonderbeilagen 2008"
+                        },
+                        {
+                            path: "/exhibits/show/sonderbeilagen/im-lauf-der-zeit",
+                            title: "Im Lauf der Zeit"
                         }
                     ]
                 },

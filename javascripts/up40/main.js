@@ -105,33 +105,7 @@ function inject_nav() {
         })
         ancestor_id += 1
         i += 1
-        console.log(current)
     }
-
-    // Render back/current/forward text and buttons.
-    var back = ""
-    if (position > 0) {
-        back = "<i class='fa fa-arrow-left arrow'></i>"
-        var e = list[position-1]
-        var title = "<span> " + e.title + "</span>"
-        back = '<a class="btn btn-default" href="' + e.path + '">' + back + title + "</a>"
-    }
-    var forward = ""
-    if (position < list.length - 1) {
-        forward = "<i class='fa fa-arrow-right arrow'></i>"
-        var e = list[position+1]
-        var title = "<span> " + e.title + " </span>"
-        forward = '<a class="btn btn-default" href="' + e.path + '">' + title + forward + "</a>"
-    }
-    var current = list[position]
-    var breadcrumb = "<ol class='breadcrumb'>"
-    if (current.exhibition) {
-        var e = current.exhibition
-        breadcrumb += "<li><a href='/museum'>Museum</a></li>"
-        breadcrumb += "<li><a href='" + e.path + "'>" + e.title + "</a></li>"
-    }
-    breadcrumb += "<li class='active'>" + current.title + "</li></ol>"
-    html = html.concat(["<table class='links'><tr><td class='first'>", back, '</td><td>', breadcrumb, '</td><td class="last">', forward,"</tr></table>"])
 
     // Render clickable dots with tooltips.
     var i = 0,
@@ -157,9 +131,40 @@ function inject_nav() {
     })
     html = html.concat(["<table class='dots'><tr>"].concat(tds).concat("</tr></table>"))
 
+    // Breadcrumb.
+    var current = list[position]
+    var breadcrumb = "<ol class='breadcrumb'>"
+    if (current.exhibition) {
+        var e = current.exhibition
+        breadcrumb += "<li><a href='/museum'>Museum</a></li>"
+        breadcrumb += "<li><a href='" + e.path + "'>" + e.title + "</a></li>"
+    }
+    breadcrumb += "<li class='active'>" + current.title + "</li></ol>"
+    html = html.concat("<div>").concat(breadcrumb).concat("</div>")
+
+    // Render back/current/forward text and buttons.
+    var back = ""
+    if (position > 0) {
+        back = "<i class='fa fa-arrow-left arrow'></i>"
+        var e = list[position-1]
+        var title = "<span> " + e.title + "</span>"
+        back = '<a class="btn btn-default btn-sm" href="' + e.path + '">' + back + title + "</a>"
+    }
+    var forward = ""
+    if (position < list.length - 1) {
+        forward = "<i class='fa fa-arrow-right arrow'></i>"
+        var e = list[position+1]
+        var title = "<span> " + e.title + " </span>"
+        forward = '<a class="btn btn-default btn-sm" href="' + e.path + '">' + title + forward + "</a>"
+    }
+    var buttons = ["<table class='links'><tr><td class='first'>", back, '</td><td class="last">', forward,"</tr></table>"]
+    html = html.concat(buttons)
+
     // Enclose nav within <div>.
     html = ["<div class='up40-nav'>"].concat(html).concat("</div>")
     jQuery('.up40-nav').replaceWith(html.join(''))
+    buttons = ["<div class='up40-nav'>"].concat(buttons).concat("</div>")
+    jQuery('.up40-nav-buttons').replaceWith(buttons.join(''))
 
     // Enable tooltips.
     jQuery('[data-toggle="tooltip"]').tooltip()
