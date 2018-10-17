@@ -1,13 +1,12 @@
-var camera, scene, renderer, controls;
-var windowHalfX = window.innerWidth / 2;
+var camera, scene, renderer, controls, canvas;
+var windowHalfX = window.innerWidth / 2
 var windowHalfY = window.innerHeight / 2;
 
 function load_3d_model(container) {
+    canvas = container;
     obj_file = jQuery(container).data('obj-file');
     mtl_file = jQuery(container).data('mtl-file');
-    console.log(obj_file, mtl_file);
-    //init(obj_file, mtl_file, container);
-    init('./javascripts/Polyeder.obj','./javascripts/Polyeder.mtl',container);
+    init(obj_file, mtl_file, container);
     animate();
 }
 
@@ -25,8 +24,9 @@ function init(obj_file, mtl_file, container) {
     // renderer
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio( window.devicePixelRatio );
-    renderer.setSize( window.innerWidth, window.innerHeight );
     container.appendChild( renderer.domElement );
+    renderer.setSize( container.clientWidth, container.clientHeight );
+
     // controls
     controls = new THREE.OrbitControls( camera, renderer.domElement );
     controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
@@ -36,7 +36,7 @@ function init(obj_file, mtl_file, container) {
     controls.maxDistance = 500;
     controls.maxPolarAngle = Math.PI / 2;
     controls.autoRotate = true;
-    //controls.autoRotateSpeed = 0.5;
+    controls.autoRotateSpeed = 0.5;
     controls.enabled = false;
     //
     window.addEventListener( 'resize', onWindowResize, false );
@@ -55,7 +55,6 @@ function init(obj_file, mtl_file, container) {
             new THREE.OBJLoader()
                 .setMaterials( materials )
                 .load( obj_file, function ( object ) {
-                    console.log("B")
                     // Rotate object manually to get a nice view on it.
                     object.rotation.x = -Math.PI/180*29;
                     object.rotation.z = Math.PI/180*0;
@@ -66,6 +65,11 @@ function init(obj_file, mtl_file, container) {
                     box.getCenter(object.position);
                     object.position.multiplyScalar(-1);
                     var pivot = new THREE.Group();
+                    // Maximize object inside container.
+                    // Use ratio of object's width/height
+                    // to set size of canvas.
+                    console.log(box.getSize());
+
                     scene.add(pivot);
                     pivot.add(object);
                 }, onProgress, onError );
@@ -75,7 +79,8 @@ function init(obj_file, mtl_file, container) {
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    //renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( canvas.innerWidth, canvas.innerHeight );
 }
 
 function animate() {

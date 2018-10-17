@@ -824,7 +824,7 @@ table.up40-tile-set-depot .up40-tile a {
   font-weight: 600;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   font-size: 1.2em;
-  text-transform: uppercase;
+//  text-transform: uppercase;
 }
 
 .up40-tile .header {
@@ -921,4 +921,9 @@ p {
 .up40-nav-buttons: {
   margin: 20px 0 0 0;
   border-bottom: 1px solid #aaaaaa;
+}
+
+/* threejs */
+.threejs {
+  height: 400px
 }

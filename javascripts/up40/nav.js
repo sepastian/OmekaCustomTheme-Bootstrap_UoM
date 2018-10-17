@@ -304,7 +304,7 @@ var nav = {
                         },
                         {
                             path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-1998",
-                            title: "PNP SOnderbeilage 1998"
+                            title: "PNP Sonderbeilage 1998"
                         },
                         {
                             path: "/exhibits/show/sonderbeilagen/pnp-sonderbeilage-2003",

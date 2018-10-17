@@ -37,7 +37,7 @@ var tile_sets = {
             }
         ], [
             {
-                title: "Außenwirkung",
+                title: "Auβenwirkung",
                 image: "/files/square_thumbnails/d8de70f47296b25232786736b2e45ec4.jpg",
                 text: "",
                 href: "/aussenwirkung"
@@ -462,7 +462,10 @@ var tile_sets = {
               image: "/files/square_thumbnails/e1fd14589874a5dcf34126a33772115a.jpg",
               text: "",
               href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/sozialstruktur"
-          }
+          },
+            {
+
+            }
         ]
     ],
 
