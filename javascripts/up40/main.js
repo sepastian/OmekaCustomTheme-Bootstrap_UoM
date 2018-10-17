@@ -137,7 +137,9 @@ function inject_nav() {
     if (current.exhibition) {
         var e = current.exhibition
         breadcrumb += "<li><a href='/museum'>Museum</a></li>"
-        breadcrumb += "<li><a href='" + e.path + "'>" + e.title + "</a></li>"
+        if (current.exhibition.path != current.path) {
+            breadcrumb += "<li><a href='" + e.path + "'>" + e.title + "</a></li>"
+        }
     }
     breadcrumb += "<li class='active'>" + current.title + "</li></ol>"
     html = html.concat("<div>").concat(breadcrumb).concat("</div>")

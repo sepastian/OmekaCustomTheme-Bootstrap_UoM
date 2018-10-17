@@ -254,7 +254,7 @@ var nav = {
         },
         {
             path: '/aussenwirkung',
-            title: 'Aussenwirkung',
+            title: 'Außenwirkung',
             children: [
                 {
                     path: "/exhibits/show/fernliegend",

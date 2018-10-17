@@ -37,7 +37,7 @@ var tile_sets = {
             }
         ], [
             {
-                title: "Aussenwirkung",
+                title: "Außenwirkung",
                 image: "/files/square_thumbnails/d8de70f47296b25232786736b2e45ec4.jpg",
                 text: "",
                 href: "/aussenwirkung"
