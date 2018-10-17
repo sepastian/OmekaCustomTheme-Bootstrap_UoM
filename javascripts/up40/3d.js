@@ -11,8 +11,8 @@ function load_3d_model(container) {
 }
 
 function init(obj_file, mtl_file, container) {
-    camera = new THREE.PerspectiveCamera( 5, window.innerWidth / window.innerHeight, 1, 1000 );
-    camera.position.set(0, 10, 50);
+    camera = new THREE.PerspectiveCamera( 4.5, container.clientWidth / container.clientHeight, 1, 1000 );
+    camera.position.set(0, 20, 50);
     // scene
     scene = new THREE.Scene();
     scene.background = new THREE.Color( 0xffffff );
@@ -65,11 +65,6 @@ function init(obj_file, mtl_file, container) {
                     box.getCenter(object.position);
                     object.position.multiplyScalar(-1);
                     var pivot = new THREE.Group();
-                    // Maximize object inside container.
-                    // Use ratio of object's width/height
-                    // to set size of canvas.
-                    console.log(box.getSize());
-
                     scene.add(pivot);
                     pivot.add(object);
                 }, onProgress, onError );
@@ -79,8 +74,7 @@ function init(obj_file, mtl_file, container) {
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    //renderer.setSize( window.innerWidth, window.innerHeight );
-    renderer.setSize( canvas.innerWidth, canvas.innerHeight );
+    renderer.setSize( canvas.clientWidth, canvas.clientHeight );
 }
 
 function animate() {
