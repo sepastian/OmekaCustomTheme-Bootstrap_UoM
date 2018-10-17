@@ -7,12 +7,12 @@ echo head(array(
 ?>
 <div class="primary">
     <div class="row page-header">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <h1><span class="glyphicon glyphicon-eye-open"></span> <?php echo $title; ?></h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-9">
+        <div class="col-sm-10 col-sm-offset-1">
         <?php if ($exhibitDescription = metadata('exhibit', 'description', array('no_escape' => true))): ?>
             <div class="exhibit-description">
                 <?php echo $exhibitDescription; ?>
@@ -25,7 +25,7 @@ echo head(array(
             </div>
         <?php endif; ?>
         </div>
-
+        <!--
         <div class="col-sm-3">
             <?php
             $pageTree = exhibit_builder_page_tree();
@@ -37,6 +37,7 @@ echo head(array(
             </nav>
             <?php endif; ?>
         </div>
+        -->
     </div>
 </div>
 <?php echo foot();

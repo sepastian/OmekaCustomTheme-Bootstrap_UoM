@@ -86,7 +86,9 @@
               <span>Digitales Uni Museum Passau</span>
             </div>
             <div class="col-sm-12 small nav-container">
-              <div class="up40-nav"></div>
+              <div class="col-sm-10 col-sm-offset-1">
+                <div class="up40-nav"></div>
+              </div>
             </div>
         </div>
         <?php fire_plugin_hook('public_header', array('view' => $this)); ?>

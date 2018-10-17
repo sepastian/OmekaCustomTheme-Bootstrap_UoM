@@ -864,7 +864,7 @@ p {
   letter-spacing: 0.2em;
   text-align: center;
   margin: 15px 0 0 0;
-  padding: 10px 0 0 0;
+  padding: 10px 0 30px 0;
 }
 
 /* UP40 nav */
@@ -873,44 +873,42 @@ p {
 }
 .up40-nav {
   margin: 0 0 20px 0;
-}
-.up40-nav i {
-  font-size: 0.7em;
-}
-.up40-nav-next, .up40-nav-prev, .up40-nav-parent {
-  font-size: 0.8em;
-  font-weight: 100;
-}
-.up40-nav-prev {
-  padding: 0;
-  text-align: left;
-}
-.up40-nav-prev:before {
-  content: '\f04a  Zurück: ';
-  font-family: FontAwesome;
-}
-.up40-nav-prev:after {
-  content: ''
-}
-.up40-nav-parent {
-  padding: 0;
   text-align: center;
 }
-.up40-nav-parent:before {
-  content: ''
+.up40-nav, .up40-nav a {
+  font-size: 1.0em;
+  color: #aaaaaa;
 }
-.up40-nav-parent:after {
-  content: '';
-  font-family: FontAwesome;
+.up40-nav td.current i {
+  color: #ee7000;
 }
-.up40-nav-next {
-  padding: 0;
+.up40-nav i.arrow {
+  font-size: 1.0em;
+  position: relative;
+  padding: 0 1px 0 1px;
+}
+.up40-nav .links {
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+.up40-nav .dots {
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+.up40-nav .dots td {
+
+}
+.up40-nav .dots td.current {
+
+
+}
+.up40-nav .links td {
+  width: 33%;
+  text-align: center;
+}
+.up40-nav .links td.first {
   text-align: left;
 }
-.up40-nav-next:before {
-  content: 'Weiter: '
-}
-.up40-nav-next:after {
-  content: ' \f04e';
-  font-family: FontAwesome;
+.up40-nav .links td.last {
+  text-align: right;
 }

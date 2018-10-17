@@ -16,7 +16,7 @@ var nav = {
                             title: "Die Jesuiten und die Bildung"
                         },
                         {
-                            path: '/exhibits/show/wie-die-uni-wurde-was-sie/die-s--kularisation-und-ihre-f#',
+                            path: '/exhibits/show/wie-die-uni-wurde-was-sie/die-s--kularisation-und-ihre-f',
                             title: "Stagnation und Neuanfang"
                         },
                         {
@@ -88,11 +88,11 @@ var nav = {
                             title: 'Frühe Weimarer Zeit'
                         },
                         {
-                            path: 'exhibits/show/vor-und-nachkriegszeit',
+                            path: '/exhibits/show/lehren-und-lernen/vor-und-nachkriegszeit',
                             title: 'Vor- und Nachkriegszeit'
                         },
                         {
-                            path: '/exhibits/show/vorlesungsverzeichnis1951',
+                            path: '/exhibits/show/lehren-und-lernen/vorlesungsverzeichnis1951',
                             title: 'Anfangszeit der BRD'
                         },
                         {
@@ -102,10 +102,6 @@ var nav = {
                         {
                             path: '/exhibits/show/lehren-und-lernen/timeline',
                             title: 'Timeline'
-                        },
-                        {
-                            path: '/exhibits/show/lehren-und-lernen/boshof',
-                            title: 'Boshof'
                         }
                     ]
                 },
@@ -114,11 +110,11 @@ var nav = {
                     title: "Oral History",
                     children: [
                         {
-                            path: "/exhibits/show/oral-history/up-mehralseinarbeitsplatz",
+                            path: "/exhibits/show/oral-history/mehralseinarbeitsplatz",
                             title: "Die Universität Passau - mehr als nur ein Arbeitsplatz"
                         },
                         {
-                            path: "/exhibits/show/oral-history/perspektive--studierende--dozi",
+                            path: "/exhibits/show/oral-history/perspektive",
                             title: "Perspektive: Studierende, Dozierende"
                         },
                         {

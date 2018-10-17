@@ -7,12 +7,12 @@ echo head(array(
 ?>
 <div class="primary">
   <div class="row page-header">
-    <div class="col-xs-12">
+    <div class="col-xs-10 col-xs-offset-1">
       <h1><span class="glyphicon glyphicon-eye-open"></span> <?php echo $title; ?></h1>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-offset-1 col-sm-9">
+    <div class="col-sm-offset-1 col-sm-10">
       <div id="exhibit-blocks" role="main">
         <?php exhibit_builder_render_exhibit_page(); ?>
       </div>

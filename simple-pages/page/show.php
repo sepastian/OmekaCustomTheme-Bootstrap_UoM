@@ -19,7 +19,7 @@ echo head(array(
 
     <?php if (!$is_home_page): ?>
     <div class="row page-header">
-        <div class="col-xs-12">
+        <div class="col-xs-offset-1 col-xs-10">
             <h1><?php echo $simple_pages_page->title; ?></h1>
         </div>
     </div>
