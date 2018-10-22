@@ -485,20 +485,6 @@ var nav = {
                             title: "Bewahren!"
                         },
                         {
-                            path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-",
-                            title: "Aufarbeiten",
-                            children: [
-                                {
-                                    path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/zahlen",
-                                    title: "Zahlen zur Studentenschaft"
-                                },
-                                {
-                                    path: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/sozialstruktur",
-                                    title: "Sozialstruktur"
-                                }
-                            ]
-                        },
-                        {
                             path: "/exhibits/show/ein-archiv-packt-aus/zeigen-",
                             title: "Zeigen!"
                         }

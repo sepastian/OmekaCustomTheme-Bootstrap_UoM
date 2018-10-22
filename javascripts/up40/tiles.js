@@ -321,12 +321,12 @@ var tile_sets = {
                 title: "Vor- und Nachkriegszeit",
                 image: "/files/square_thumbnails/607cf9419e6211de29a9576db5277c04.jpg",
                 text: "",
-                href: "/exhibits/show/vor-und-nachkriegszeit"
+                href: "/exhibits/show/lehren-und-lernen/vor-und-nachkriegszeit"
             }, {
                 title: "Anfangszeit der BRD",
                 image: "/files/square_thumbnails/3d8d640f03d5aa938a636fd5d1ed7b6a.jpg",
                 text: "",
-                href: "/exhibits/show/vorlesungsverzeichnis1951"
+                href: "/exhibits/show/lehren-und-lernen/vorlesungsverzeichnis1951"
             }
         ], [
             {
@@ -339,6 +339,8 @@ var tile_sets = {
                 image: "/files/square_thumbnails/c2cd03070ae06e79977505897db31c54.jpg",
                 text: "",
                 href: "/exhibits/show/lehren-und-lernen/timeline"
+            },{
+
             }
         ]
     ],
@@ -439,36 +441,13 @@ var tile_sets = {
                 href: "/exhibits/show/ein-archiv-packt-aus/bewahren-"
             },
             {
-                title: "Aufarbeiten!",
-                image: "/files/square_thumbnails/aec6b1528eb6353034407f1eb9cdb4b5.jpg",
-                text: "",
-                href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-"
-            },
-            {
                 title: "Zeigen!",
                 image: "/files/square_thumbnails/71087e69bf7058c3f8520a34c6d65c6c.jpg",
                 text: "",
                 href: "/exhibits/show/ein-archiv-packt-aus/zeigen-"
             }
-        ],[
-          {
-              title: "Zahlen zur Studentenschaft",
-              image: "/files/square_thumbnails/64341a371ff28c3c1dceef4cec595495.jpg",
-              text: "",
-              href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/zahlen"
-          },
-          {
-              title: "Sozialstruktur",
-              image: "/files/square_thumbnails/e1fd14589874a5dcf34126a33772115a.jpg",
-              text: "",
-              href: "/exhibits/show/ein-archiv-packt-aus/aufarbeiten-/sozialstruktur"
-          },
-            {
-
-            }
         ]
     ],
-
     '/exhibits/show/projekt': [
         [
             {

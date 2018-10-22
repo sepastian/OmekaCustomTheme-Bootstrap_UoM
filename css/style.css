@@ -801,8 +801,7 @@ table.up40-tile-set {
 }
 
 table.up40-tile-set td {
-  padding: 2px;
-  width:25%;
+  padding: 1px;
 }
 
 .up40-tile {
@@ -810,6 +809,7 @@ table.up40-tile-set td {
   background-size: 100%;
   background-position: center;
   position: relative;
+  border-radius: 3px;
 }
 
 table.up40-tile-set-depot .up40-tile {
@@ -819,12 +819,15 @@ table.up40-tile-set-depot .up40-tile a {
   font-size: 1.0em;
 }
 
-.up40-tile a {
+.up40-tile-link {
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-  font-size: 1.2em;
-//  text-transform: uppercase;
+  font-size: 1.3em;
+}
+.up40-tile-link:hover {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
 }
 
 .up40-tile .header {

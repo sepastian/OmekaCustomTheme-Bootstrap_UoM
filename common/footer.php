@@ -13,6 +13,7 @@
                 </div>
             </div>
             <div class="row">
+              <div class="col-sm-offset-1 col-sm-10">
                 <!--
                 <div class="col-sm-9">
                     <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
@@ -21,16 +22,48 @@
                 </div>
                 -->
                 <div class="col-sm-4">
-                  <a href="/impressum">Impressum</a>
+                  <a href="http://www.uni-passau.de/impressum/" target="blank">Impressum</a>
                 </div>
                 <div class="col-sm-4">
-                  <p class="text-center">
-                    <a href="/datenschutzerklaerung">Datenschutzerklärung</a>
+                    <p class="text-center omeka-props-footer text-right"><?php echo __('Erstellt mit <a href="https://omeka.org">Omeka</a>.'); ?></p>
+                </div>
+                <div class="col-sm-4">
+                  <p class="text-right">
+                    <a href="http://www.uni-passau.de/datenschutzerklaerung/" target="blank">Datenschutzerklärung</a>
                   </p>
                 </div>
-                <div class="col-sm-4">
-                    <p class="text-right omeka-props-footer text-right"><?php echo __('Erstellt mit <a href="https://omeka.org">Omeka</a>.'); ?></p>
+              </div>
+              <div class="col-sm-offset-1 col-sm-10">
+                <div class="col-sm-6 text-left">
+                  <address>
+                    Inhalte<br>
+                    Universität Passau<br>
+                    Prof. Dr. Malte Rehbein<br>
+                    Lehrstuhl für Digital Humanities<br>
+                    94030 Passau<br>
+                  </address>
+                  <address>
+                    Lehrstuhlkontakt<br>
+                    Heidi Riederer<br>
+                    Telefon: +49(0)851/509 – 3451<br>
+                    Fax: +49(0)851/509 – 3452<br>
+                    E-Mail: heidi.riederer(at)uni-passau.de<br>
+                  </address>
                 </div>
+                <div class="col-sm-6 text-right">
+                  <address>
+                    Kontakt<br>
+                    Universität Passau<br>
+                    Lehrstuhl für Digital Humanities<br>
+                    Dr.-Hans-Kapfinger-Straße 14 d<br>
+                    94032 Passau<br>
+                  </address>
+                  <address>
+                    Dr. Andrea Schilz<br>
+                    Tel.: +49(0)851/509 – 3454<br>
+                    E-Mail: andrea.schilz(at)uni-passau.de
+                </div>
+              </div>
             </div>
             <div>
                 <?php fire_plugin_hook('public_footer'); ?>
@@ -80,7 +113,11 @@
       // replacing placeholders with class '.up40-tile-set'.
       inject_tile_sets(jQuery('.up40-tile-set'));
       inject_nav();
-
+      jQuery('.header').each(function(i,h){
+        jQuery(h).on('click',function(e){
+          console.log(jQuery(e).data('href'))
+        })
+      });
       });
     </script>
 

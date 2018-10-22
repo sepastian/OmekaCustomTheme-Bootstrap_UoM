@@ -47,11 +47,13 @@ function inject_tile_sets(elements) {
                 }
                 var css_bg_image = 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6)), url("' + tile.image + '")';
                 html.push('<td style="width:' + tile_width + '%;">');
+                html.push('<a class="up40-tile-link" href="' + tile.href + '">');
                 html.push('<div class="up40-tile" style=\'background-image:' + css_bg_image + '\'>');
                 html.push('<div class="header">');
-                html.push('<a href="' + tile.href + '">' + tile.title + "</a>");
+                html.push('<span>' + tile.title + '</span>');
                 html.push('</div>');
                 html.push('</div>');
+                html.push('</a>')
                 html.push('</td>');
             })
             html.push("</tr>");
