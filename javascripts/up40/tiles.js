@@ -219,6 +219,16 @@ var tile_sets = {
             }
         ]
     ],
+    '/exhibits/show/studentenleben/lyzeum': [
+        [
+            {
+                title: "Zahlen und Figuren",
+                image: "/files/square_thumbnails/64341a371ff28c3c1dceef4cec595495.jpg",
+                text: "",
+                href: "/exhibits/show/studentenleben/lyzeum/zahlenfiguren"
+            }
+        ]
+    ],
     '/exhibits/show/studentenleben/noten': [
         [
             {

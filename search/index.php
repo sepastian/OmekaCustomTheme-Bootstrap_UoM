@@ -1,16 +1,22 @@
 <?php
-$pageTitle = __('Search') . ' ' . __('(%s total)', $total_results);
+$pageTitle = __('Search') . ' ' . __('(%s Ergebnisse)', $total_results);
 echo head(array(
     'title' => $pageTitle,
     'bodyclass' => 'search',
 ));
 $searchRecordTypes = get_search_record_types();
 ?>
-<div id="primary">
-<h1><?php echo $pageTitle; ?></h1>
+<div id="primary" class="col-sm-10 col-sm-offset-1">
+<!--<h1><?php echo $pageTitle; ?></h1>-->
+<h1>
+  Suche
+  <small><?php echo $total_results ?> Ergebnisse</small>
+</h1>
+<!--
 <div class="bs-callout bs-callout-info">
     <?php echo search_filters(); ?>
 </div>
+-->
 <?php if ($total_results): ?>
 <?php if ($paginationLinks = pagination_links()): ?>
     <div id="pagination-top">

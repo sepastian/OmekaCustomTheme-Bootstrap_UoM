@@ -21,20 +21,7 @@
                     <?php endif; ?>
                 </div>
                 -->
-                <div class="col-sm-4">
-                  <a href="http://www.uni-passau.de/impressum/" target="blank">Impressum</a>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center omeka-props-footer text-right"><?php echo __('Erstellt mit <a href="https://omeka.org">Omeka</a>.'); ?></p>
-                </div>
-                <div class="col-sm-4">
-                  <p class="text-right">
-                    <a href="http://www.uni-passau.de/datenschutzerklaerung/" target="blank">Datenschutzerklärung</a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-offset-1 col-sm-10">
-                <div class="col-sm-6 text-left">
+                <div class="col-sm-4 text-left">
                   <address>
                     Inhalte<br>
                     Universität Passau<br>
@@ -50,7 +37,18 @@
                     E-Mail: heidi.riederer(at)uni-passau.de<br>
                   </address>
                 </div>
-                <div class="col-sm-6 text-right">
+                <div class="col-sm-4 text-center">
+                  <p class="text-center">
+                    <a href="http://www.uni-passau.de/impressum/" target="blank">Impressum Uni Passau</a>
+                  </p>
+                  <p class="text-center">
+                    <a href="http://www.uni-passau.de/datenschutzerklaerung/" target="blank">Datenschutzerklärung Uni Passau</a>
+                  </p>
+                  <p class="text-center">
+                    Erstellt mit <a href="https://omeka.org">Omeka</a>.
+                  </p>
+                </div>
+                <div class="col-sm-4 text-right">
                   <address>
                     Kontakt<br>
                     Universität Passau<br>
@@ -62,6 +60,7 @@
                     Dr. Andrea Schilz<br>
                     Tel.: +49(0)851/509 – 3454<br>
                     E-Mail: andrea.schilz(at)uni-passau.de
+                  </address>
                 </div>
               </div>
             </div>

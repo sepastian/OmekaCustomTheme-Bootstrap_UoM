@@ -921,12 +921,24 @@ p {
 .up40-nav .links td.last, .up40-nav-buttons .links td.first {
   text-align: right;
 }
-.up40-nav-buttons: {
+.up40-nav-buttons {
   margin: 20px 0 0 0;
   border-bottom: 1px solid #aaaaaa;
+}
+.up40-nav .nav-button {
+  background-color: #ee7000;
+  color: #ffffff;
+  border: 1px solid #ee7000;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 /* threejs */
 .threejs {
   height: 500px;
+}
+
+/* /search */
+.pagination .active>span {
+  background-color: #ee7000;
+  border: 1px solid #dddddd;
 }

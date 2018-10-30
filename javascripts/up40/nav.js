@@ -162,7 +162,13 @@ var nav = {
                     children: [
                         {
                             path: "/exhibits/show/studentenleben/lyzeum",
-                            title: "Am Lyzeum"
+                            title: "Am Lyzeum",
+                            children: [
+                                {
+                                    path: "/exhibits/show/studentenleben/lyzeum/zahlenfiguren",
+                                    title: "Zahlen und Figuren"
+                                }
+                            ]
                         },
                         {
                             path: "/exhibits/show/studentenleben/regeln",

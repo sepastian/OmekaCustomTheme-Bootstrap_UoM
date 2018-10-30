@@ -13,7 +13,7 @@ echo head(array(
 )); ?>
 <div id="primary">
     <div class="row page-header">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <h1><span class="glyphicon glyphicon-file"></span> <?php echo $fileTitle; ?></h1>
         </div>
     </div>

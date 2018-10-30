@@ -152,14 +152,14 @@ function inject_nav() {
         back = "<i class='fa fa-arrow-left arrow'></i>"
         var e = list[position-1]
         var title = "<span> " + e.title + "</span>"
-        back = '<a class="btn btn-default btn-sm" href="' + e.path + '">' + back + title + "</a>"
+        back = '<a class="btn btn-default btn-sm nav-button" href="' + e.path + '">' + back + title + "</a>"
     }
     var forward = ""
     if (position < list.length - 1) {
         forward = "<i class='fa fa-arrow-right arrow'></i>"
         var e = list[position+1]
         var title = "<span> " + e.title + " </span>"
-        forward = '<a class="btn btn-default btn-sm" href="' + e.path + '">' + title + forward + "</a>"
+        forward = '<a class="btn btn-default btn-sm nav-button" href="' + e.path + '">' + title + forward + "</a>"
     }
     var buttons = ["<table class='links'><tr><td class='first'>", back, '</td><td class="last">', forward,"</tr></table>"]
     html = html.concat(buttons)

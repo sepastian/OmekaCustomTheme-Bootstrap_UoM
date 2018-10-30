@@ -7,7 +7,7 @@ echo head(array(
 ?>
 <div id="primary">
     <div class="row form-group">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <nav class="pager">
                 <ul>
                     <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
@@ -19,7 +19,7 @@ echo head(array(
         </div>
     </div>
     <div class="row page-header">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <h1><span class="glyphicon glyphicon-book"></span> <?php echo $pageTitle; ?></h1>
         </div>
     </div>
@@ -30,7 +30,7 @@ else:
     // $fieldsToDisplay = get_theme_option('Display Dublin Core Fields');
 ?>
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-xs-10 col-xs-offset-1">
             <div class="row">
                 <div class="col-xs-12">
                     <?php echo all_element_texts($item); ?>
@@ -90,7 +90,7 @@ else:
             </div>
         </div>
         <!-- The following returns all of the files associated with an item. -->
-        <div id="itemfiles" class="col-md-6">
+        <div id="itemfiles" class="col-xs-10 col-xs-offset-1">
             <?php if (metadata($item, 'has files')): ?>
             <h3><?php echo metadata($item, 'file_count') == 1 ? __('File') : __('Files'); ?></h3>
             <div class="element-text"><?php echo custom_files_for_item(
@@ -112,7 +112,7 @@ else:
 <?php endif; ?>
     <br />
     <div class="row form-group">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <nav class="pager">
                 <ul>
                     <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
