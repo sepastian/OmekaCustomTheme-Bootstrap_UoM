@@ -39,10 +39,15 @@
                 </div>
                 <div class="col-sm-4 text-center">
                   <p class="text-center">
-                    <a href="http://www.uni-passau.de/impressum/" target="blank">Impressum Uni Passau</a>
+                    <a href="http://www.uni-passau.de/impressum/" target="blank">Impressum</a>
                   </p>
                   <p class="text-center">
-                    <a href="http://www.uni-passau.de/datenschutzerklaerung/" target="blank">Datenschutzerklärung Uni Passau</a>
+                    <a href="http://www.uni-passau.de/datenschutzerklaerung/" target="blank">Datenschutzerklärung</a>
+                  </p>
+                  <p class="text-center">
+                    Projekt
+                    <br>
+                    <a href="/exhibits/show/projekt/beitr--gerinnen">BeiträgerInnen</a>
                   </p>
                   <p class="text-center">
                     Erstellt mit <a href="https://omeka.org">Omeka</a>.
@@ -112,11 +117,6 @@
       // replacing placeholders with class '.up40-tile-set'.
       inject_tile_sets(jQuery('.up40-tile-set'));
       inject_nav();
-      jQuery('.header').each(function(i,h){
-        jQuery(h).on('click',function(e){
-          console.log(jQuery(e).data('href'))
-        })
-      });
       });
     </script>
 

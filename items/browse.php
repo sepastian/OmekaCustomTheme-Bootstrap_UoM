@@ -17,31 +17,37 @@ echo head(array(
 ?>
 <div id="primary">
     <div class="row page-header">
-        <div class="col-xs-12">
-        <h1><span class="glyphicon glyphicon-list"></span> <?php echo $pageTitle;?> <small><?php echo __('(%s items total)', $total_results); ?></small></h1>
+        <div class="col-xs-10 col-xs-offset-1">
+        <h1><span class="glyphicon glyphicon-list"></span> <?php echo $pageTitle;?> <small><?php echo __('(%s Ergebnisse)', $total_results); ?></small></h1>
         </div>
     </div>
-    <nav class="items-nav navigation secondary-nav">
-        <?php echo public_nav_items()->setUlClass('nav nav-pills'); ?>
-    </nav>
-<?php if ($searchFilters = item_search_filters()): ?>
-    <div class="bs-callout bs-callout-info">
-        <?php echo $searchFilters; ?>
-    </div>
-<?php endif; ?>
-<?php if ($paginationLinks = pagination_links()): ?>
-    <div id="pagination-top">
-        <?php echo $paginationLinks; ?>
-    </div>
-<?php endif; ?>
-<?php
-    if ($total_results > 1):
+
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <nav class="items-nav navigation secondary-nav">
+          <?php echo public_nav_items()->setUlClass('nav nav-pills'); ?>
+        </nav>
+        <?php if ($searchFilters = item_search_filters()): ?>
+        <div class="bs-callout bs-callout-info">
+          <?php echo $searchFilters; ?>
+        </div>
+        <?php endif; ?>
+        <?php if ($paginationLinks = pagination_links()): ?>
+        <div id="pagination-top">
+          <?php echo $paginationLinks; ?>
+        </div>
+        <?php endif; ?>
+        <?php
+          if ($total_results > 1):
         $sortLinks[__('Title')] = 'Dublin Core,Title';
         $sortLinks[__('Creator')] = 'Dublin Core,Creator';
         $sortLinks[__('Date Added')] = 'added';
-    ?>
+        ?>
+      </div>
+    </div>
+
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <div id="sort-links" class="input-group input-group-sm btn-group">
                 <span class="input-group-addon"><?php echo __('Sort by:'); ?></span>
                 <div class="input-group">
@@ -108,6 +114,9 @@ echo head(array(
     });
 </script>
 <?php else: ?>
+
+<div class="row">
+<div class="col-xs-10 col-xs-offset-1">
 <?php foreach(loop('items') as $item): ?>
     <div class="item">
         <div class="row">
@@ -155,6 +164,9 @@ echo head(array(
     </div>
 <?php fire_plugin_hook('public_items_browse_each', array('view'  =>  $this, 'item' => $item)); ?>
 <?php endforeach; ?>
+</div>
+</div>
+
 <?php endif; ?>
 <?php if ($paginationLinks): ?>
     <div id="pagination-bottom">

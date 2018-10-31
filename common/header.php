@@ -83,7 +83,7 @@
                     'form_attributes' => array('class' => 'form-search navbar-form navbar-right', 'role' => 'form'))); ?>
             </div>
             <div class="col-sm-12" id="site-title-text">
-              <span>Digitales Uni Museum Passau</span>
+              <span>Digitales Uni-Museum Passau</span>
             </div>
             <div class="col-sm-12 small nav-container">
               <div class="col-sm-10 col-sm-offset-1">

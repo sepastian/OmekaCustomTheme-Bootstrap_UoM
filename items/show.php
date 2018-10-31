@@ -6,21 +6,9 @@ echo head(array(
 ));
 ?>
 <div id="primary">
-    <div class="row form-group">
-        <div class="col-xs-10 col-xs-offset-1">
-            <nav class="pager">
-                <ul>
-                    <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
-                </ul>
-                <ul>
-                    <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
     <div class="row page-header">
         <div class="col-xs-10 col-xs-offset-1">
-            <h1><span class="glyphicon glyphicon-book"></span> <?php echo $pageTitle; ?></h1>
+            <h1><span class="glyphicon glyphicon-book"></span>Objektbeschreibung nach Dublin Core</h1>
         </div>
     </div>
 <?php if ($selectedMetadata = get_theme_option('Display Preselected Metadata')):
@@ -110,18 +98,5 @@ else:
         </div>
     </div>
 <?php endif; ?>
-    <br />
-    <div class="row form-group">
-        <div class="col-xs-10 col-xs-offset-1">
-            <nav class="pager">
-                <ul>
-                    <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
-                </ul>
-                <ul>
-                    <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
 </div><?php //end primary ?>
 <?php echo foot();

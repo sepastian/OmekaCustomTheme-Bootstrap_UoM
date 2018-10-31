@@ -13,22 +13,30 @@ echo head($head);
 
 <div id="primary">
     <div class="row page-header">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <h1><span class="glyphicon glyphicon-time"></span> <?php echo $title; ?></h1>
         </div>
     </div>
     <?php
     $linkToNav = get_option('neatline_time_link_to_nav');
     if ($linkToNav == 'browse' || $linkToNav == 'main'): ?>
+    <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
     <nav class="items-nav navigation secondary-nav">
         <?php echo public_nav_items()->setUlClass('nav nav-pills'); ?>
     </nav>
+    </div>
+    </div>
     <?php endif; ?>
     <?php if ($total_results) : ?>
     <?php foreach (loop('Neatline_Time_Timelines') as $timeline): ?>
+    <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
     <div class="timeline">
         <h2><?php echo link_to($timeline, 'show', $timeline->title); ?></h2>
         <?php echo snippet_by_word_count(metadata($timeline, 'description'), '10'); ?>
+    </div>
+    </div>
     </div>
     <?php endforeach; ?>
     <div class="pagination">

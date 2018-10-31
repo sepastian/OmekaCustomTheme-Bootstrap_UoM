@@ -21,20 +21,20 @@ head(array(
 endif;
 ?>
     <div class="row page-header">
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <h1><?php echo $pageTitle; ?></h1>
         </div>
     </div>
 <div class="row">
     <form <?php echo _tag_attributes($formAttributes); ?>>
-        <div class="col-xs-12">
+        <div class="col-xs-10 col-xs-offset-1">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-10 col-xs-offset-1">
                     <hr />
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-10 col-xs-offset-1">
                     <div id="search-keywords" class="field form-inline">
                         <?php echo label(array('for' => 'keyword-search', 'class' => 'label'), __('Search for Keywords:')); ?>
                         <div class="inputs">
@@ -49,7 +49,7 @@ endif;
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12"><hr /></div>
+                <div class="col-xs-10 col-xs-offset-1"><hr /></div>
             </div>
             <div class="row">
                 <div class="col-sm-9">
@@ -98,12 +98,12 @@ endif;
                             </div>
                         <?php endforeach; ?>
                         </div>
-                        <button type="button" class="add_search btn btn-info btn-sm"><span class="glyphicon glyphicon-plus-sign icon-white"></span> <?php echo __('Add a Field'); ?></button>
+                        <button type="button" class="add_search btn btn-info btn-sm"><span class="glyphicon glyphicon-plus-sign icon-white" style="margin-top:20px"></span> <?php echo __('Add a Field'); ?></button>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12"><hr /></div>
+                <div class="col-xs-10 col-xs-offset-1"><hr /></div>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -120,7 +120,7 @@ endif;
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12"><hr /></div>
+                <div class="col-xs-10 col-xs-offset-1"><hr /></div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
@@ -146,7 +146,7 @@ endif;
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12"><hr /></div>
+                <div class="col-xs-10 col-xs-offset-1"><hr /></div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
@@ -186,7 +186,7 @@ endif;
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12"><hr /></div>
+                <div class="col-xs-10 col-xs-offset-1"><hr /></div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
@@ -228,7 +228,7 @@ endif;
             </div>
             <?php if (is_admin_theme()): ?>
             <div class="row">
-                <div class="col-xs-12"><hr /></div>
+                <div class="col-xs-10 col-xs-offset-1"><hr /></div>
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -277,13 +277,13 @@ endif;
             </div>
             <?php endif; ?>
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-10 col-xs-offset-1">
                     <?php is_admin_theme() ? fire_plugin_hook('admin_append_to_advanced_search') : fire_plugin_hook('public_append_to_advanced_search'); ?>
                 </div>
             </div>
-            <!-- <div class="col-xs-12"><hr /></div> -->
+            <!-- <div class="col-xs-10 col-xs-offset-1"><hr /></div> -->
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-10 col-xs-offset-1">
                     <input class="submit btn btn-primary form-control" name="submit_search" id="submit_search_advanced" value="<?php echo __('Search'); ?>" type="submit">
                 </div>
             </div>

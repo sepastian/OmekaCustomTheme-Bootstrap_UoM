@@ -75,7 +75,7 @@ function inject_nav() {
     // Convert nav to flat list, depth first.
     var stack = [nav],
         list = [],
-        position = 0,
+        position = -1,
         i = 0,
         html = [],
         ancestor_id = 0, // unique ID for each ancestor
@@ -135,15 +135,21 @@ function inject_nav() {
 
     // Breadcrumb.
     var current = list[position]
-    var breadcrumb = "<ol class='breadcrumb'>"
-    if (current.exhibition) {
-        var e = current.exhibition
-        breadcrumb += "<li><a href='/museum'>Museum</a></li>"
-        if (current.exhibition.path != current.path) {
-            breadcrumb += "<li><a href='" + e.path + "'>" + e.title + "</a></li>"
+    var breadcrumb = "<ol class='breadcrumb'><li><a href='/'>Start</a></li>"
+    console.log(current)
+    if (current) {
+        if (current.exhibition) {
+            var e = current.exhibition
+            breadcrumb += "<li><a href='/museum'>Museum</a></li>"
+            if (current.exhibition.path != current.path) {
+                breadcrumb += "<li><a href='" + e.path + "'>" + e.title + "</a></li>"
+            }
         }
+        breadcrumb += "<li class='active'>" + current.title + "</li></ol>"
+    } else {
+        /* Current page not in nav.js -> /depot. */
+        breadcrumb += "<li class='active'>Depot</li></ol>";
     }
-    breadcrumb += "<li class='active'>" + current.title + "</li></ol>"
     html = html.concat("<div>").concat(breadcrumb).concat("</div>")
 
     // Render back/current/forward text and buttons.
