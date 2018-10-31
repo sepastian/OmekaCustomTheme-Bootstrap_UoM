@@ -62,7 +62,7 @@ function init(obj_file, mtl_file, container) {
                     // Center object.
                     // https://stackoverflow.com/questions/28848863/threejs-how-to-rotate-around-objects-own-center-instead-of-world-center/28860849#28860849
                     var box = new THREE.Box3().setFromObject(object);
-                    box.getCenter(object.position);
+                    box.getCenter(object.position); // this will set object's center to the center of box
                     object.position.multiplyScalar(-1);
                     var pivot = new THREE.Group();
                     scene.add(pivot);
