@@ -134,18 +134,12 @@ var nav = {
                             title: "Von fast nichts zu sehr viel (Boshof)"
                         },
                         {
-                            path: "/exhibits/show/oral-history/40-jahre-campus-passau",
-                            title: "40 Jahre Campus - oder?",
-                            children: [
-                                {
-                                    path: "/exhibits/show/oral-history/40-jahre-campus-passau/von-der-baugrube-zum-campus",
-                                    title: "Von der Baugrube zum Campus - die Uni entsteht"
-                                },
-                                {
-                                    path: "/exhibits/show/oral-history/40-jahre-campus-passau/in-guten-haenden-das-referat-l",
-                                    title: "In guten Händen: Das Referat Liegenschaften"
-                                }
-                            ]
+                            path: "/exhibits/show/oral-history/von-der-baugrube-zum-campus",
+                            title: "Von der Baugrube zum Campus - die Uni entsteht"
+                        },
+                        {
+                            path: "/exhibits/show/oral-history/in-guten-haenden-das-referat-l",
+                            title: "In guten Händen: Das Referat Liegenschaften"
                         }
                     ]
                 },

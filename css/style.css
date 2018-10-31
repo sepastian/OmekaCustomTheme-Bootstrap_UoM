@@ -881,19 +881,22 @@ p {
 .up40-nav, .up40-nav a {
   color: #aaaaaa;
 }
-.up40-nav .links a, .up40-nav-buttons .links a {
-
-}
 .up40-nav .dots {
-  font-size: 0.7em;
+  margin: 0 0 10px 0;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8em;
 }
-.up40-nav .dots .separator {
-  color: #ee7000;
-  position: relative;
-  top: -0.1em;
+.up40-nav .dots td {
+  text-align: center;
 }
-.up40-nav td.current i {
+.up40-nav .dots td a {
+  color: #444444;
+}
+.up40-nav .dots td.current a {
   color: #ee7000;
+  font-weight: bold;
+  text-align: center;
 }
 .up40-nav i.arrow {
   font-size: 1.0em;
@@ -908,10 +911,6 @@ p {
   background-color: transparent;
   margin: 0 0 30px 0;
   padding: 0;
-}
-.up40-nav .dots {
-  margin: 0 0 10px 0;
-  width: 100%;
 }
 .up40-nav .links td, .up40-nav-buttons .links td,  {
   width: 50%;
@@ -972,4 +971,12 @@ p {
   font-weight: bold;
   background-color: #ee7000;
   color: #ffffff;
+}
+
+/* Hide nav dots, if width of rendering area < 1200. */
+
+@media only screen and (max-width: 1199px) {
+  .up40-nav .dots {
+    display: none;
+  }
 }

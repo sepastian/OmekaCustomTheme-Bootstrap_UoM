@@ -113,21 +113,22 @@ function inject_nav() {
     var i = 0,
         tds = [];
     list.forEach(function(e) {
-        // Display a separator between exhibitions.
-        var separator = ""
-        if (e.ancestors.length == 1) {
-            separator = "<span class='separator'> | </span>"
-        }
         // Display exhibition and title in tooltip.
         var title = e.title
-        if (e.exhibition) {
+        if (e.exhibition && e.ancestors.length > 1) {
             title = e.exhibition.title + " - " + title
         }
         var a = "<a href=" + e.path + " data-toggle='tooltip' data-placement='bottom' title='" + title + "'>"
+        // Display separator between exhibitions.
         if (i == position) {
-            tds.push("<td class='current " + ancestors + "'>" + separator + a + "<i class='fa fa-square'></i></a></td>")
+            // Current position.
+            tds.push("<td class='current'>" + a + "&#9724;</a></td>")
+        } else if (e.ancestors.length == 1) {
+            // Dot representing start of exhibition.
+            tds.push("<td>" + a + "&#9724;</a></td>")
         } else {
-            tds.push("<td class='" + ancestors + "'>" + separator + a + "<i class='fa fa-square-o'></i></a></td>")
+            // Non-exhibition.
+            tds.push("<td class=''>" + a + "&#9723;</a></td>")
         }
         i += 1
     })
@@ -136,7 +137,6 @@ function inject_nav() {
     // Breadcrumb.
     var current = list[position]
     var breadcrumb = "<ol class='breadcrumb'><li><a href='/'>Start</a></li>"
-    console.log(current)
     if (current) {
         if (current.exhibition) {
             var e = current.exhibition
