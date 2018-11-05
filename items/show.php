@@ -8,7 +8,9 @@ echo head(array(
 <div id="primary">
     <div class="row page-header">
         <div class="col-xs-10 col-xs-offset-1">
-            <h1><span class="glyphicon glyphicon-book"></span>Objektbeschreibung nach Dublin Core</h1>
+            <h1><span class="glyphicon glyphicon-book"></span>
+              <?php echo metadata($item, 'display_title') ?>
+            </h1>
         </div>
     </div>
 <?php if ($selectedMetadata = get_theme_option('Display Preselected Metadata')):
@@ -21,24 +23,12 @@ else:
         <div class="col-xs-10 col-xs-offset-1">
             <div class="row">
                 <div class="col-xs-12">
-                    <?php echo all_element_texts($item); ?>
-                </div>
-            </div>
-
-            <!-- If the item belongs to a collection, the following creates a link to that collection. -->
-            <?php if (get_collection_for_item($item)): ?>
-            <div class="row">
-                <div class="col-xs-12">
                     <hr />
-                    <div id="collection">
-                        <h4 style="display:inline"><span class="glyphicon glyphicon-book"></span> <?php echo __('Collection'); ?>: </h4>
-                        <h4 style="display:inline"><?php echo link_to_collection_for_item(); ?></h4>
-                    </div>
+                    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
                 </div>
             </div>
-            <?php endif; ?>
 
-            <!-- The following prints a list of all tags associated with the item -->
+          <!-- The following prints a list of all tags associated with the item -->
             <?php // if (metadata($item, 'has tags')): ?>
             <div class="row">
                 <div class="col-xs-12">
@@ -55,6 +45,20 @@ else:
                 </div>
             </div>
             <?php // endif; ?>
+
+          <!-- If the item belongs to a collection, the following creates a link to that collection. -->
+            <?php if (get_collection_for_item($item)): ?>
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr />
+                    <div id="collection">
+                        <h4 style="display:inline"><span class="glyphicon glyphicon-book"></span> <?php echo __('Collection'); ?>: </h4>
+                        <h4 style="display:inline"><?php echo link_to_collection_for_item(); ?></h4>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+
             <!-- The following prints a citation for this item. -->
             <div class="row">
                 <div class="col-xs-12">
@@ -70,13 +74,8 @@ else:
                     <div class="element-text"><?php echo output_format_list(); ?></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <hr />
-                    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-                </div>
-            </div>
         </div>
+
         <!-- The following returns all of the files associated with an item. -->
         <div id="itemfiles" class="col-xs-10 col-xs-offset-1">
             <?php if (metadata($item, 'has files')): ?>

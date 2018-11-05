@@ -23,49 +23,23 @@
                 -->
                 <div class="col-sm-4 text-left">
                   <address>
-                    Inhalte<br>
-                    Universität Passau<br>
-                    Prof. Dr. Malte Rehbein<br>
-                    Lehrstuhl für Digital Humanities<br>
-                    94030 Passau<br>
-                  </address>
-                  <address>
-                    Lehrstuhlkontakt<br>
-                    Heidi Riederer<br>
-                    Telefon: +49(0)851/509 – 3451<br>
-                    Fax: +49(0)851/509 – 3452<br>
-                    E-Mail: heidi.riederer(at)uni-passau.de<br>
-                  </address>
-                </div>
-                <div class="col-sm-4 text-center">
-                  <p class="text-center">
-                    <a href="http://www.uni-passau.de/impressum/" target="blank">Impressum</a>
-                  </p>
-                  <p class="text-center">
-                    <a href="http://www.uni-passau.de/datenschutzerklaerung/" target="blank">Datenschutzerklärung</a>
-                  </p>
-                  <p class="text-center">
-                    Projekt
-                    <br>
-                    <a href="/exhibits/show/projekt/beitr--gerinnen">BeiträgerInnen</a>
-                  </p>
-                  <p class="text-center">
-                    Erstellt mit <a href="https://omeka.org">Omeka</a>.
-                  </p>
-                </div>
-                <div class="col-sm-4 text-right">
-                  <address>
                     Kontakt<br>
                     Universität Passau<br>
-                    Lehrstuhl für Digital Humanities<br>
+                    <a href="http://www.phil.uni-passau.de/dh/">Lehrstuhl für Digital Humanities</a><br>
                     Dr.-Hans-Kapfinger-Straße 14 d<br>
                     94032 Passau<br>
                   </address>
-                  <address>
-                    Dr. Andrea Schilz<br>
-                    Tel.: +49(0)851/509 – 3454<br>
-                    E-Mail: andrea.schilz(at)uni-passau.de
-                  </address>
+                </div>
+                <div class="col-sm-4 text-center">
+                </div>
+                <div class="col-sm-4 text-right">
+                  <a href="http://www.uni-passau.de/impressum/" target="blank">Impressum</a>
+                  <br>
+                  <a href="http://www.uni-passau.de/datenschutzerklaerung/" target="blank">Datenschutzerklärung</a>
+                  <br>
+                  <a href="/exhibits/show/projekt/">Über das Projekt</a>
+                  <br>
+                  Erstellt mit <a href="https://omeka.org">Omeka</a>.
                 </div>
               </div>
             </div>
